@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #08060d;
+    color: #ffffff;
+  }
+}
