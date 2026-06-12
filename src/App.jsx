@@ -2,11 +2,25 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import AboutUs from './pages/AboutUs';
-import Offer from './pages/Offer';
-import Services from './pages/Services';
-import Works from './pages/Works';
 import Contact from './pages/Contact';
+
+// Indusive Sports sub-pages
+import OurPartners from './pages/indusive-sports/OurPartners';
+import ProductRange from './pages/indusive-sports/ProductRange';
+import Epufloor from './pages/indusive-sports/Epufloor';
+import Redexim from './pages/indusive-sports/Redexim';
+
+// Indusive Sports > Our Products
+import FootballTurf from './pages/indusive-sports/products/FootballTurf';
+import HockeyTurf from './pages/indusive-sports/products/HockeyTurf';
+import TennisTurf from './pages/indusive-sports/products/TennisTurf';
+import MultiPurposeTurf from './pages/indusive-sports/products/MultiPurposeTurf';
+import LandscapeLeisureTurf from './pages/indusive-sports/products/LandscapeLeisureTurf';
+
+// Top-level pages
+import Testimonials from './pages/Testimonials';
+import OurClients from './pages/OurClients';
+import OurTeam from './pages/OurTeam';
 
 function App() {
   return (
@@ -19,11 +33,25 @@ function App() {
       {/* Page Routing */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/offer" element={<Offer />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/works" element={<Works />} />
         <Route path="/contact" element={<Contact />} />
+
+        {/* Indusive Sports */}
+        <Route path="/indusive-sports/our-partners" element={<OurPartners />} />
+        <Route path="/indusive-sports/product-range" element={<ProductRange />} />
+        <Route path="/indusive-sports/epufloor" element={<Epufloor />} />
+        <Route path="/indusive-sports/redexim" element={<Redexim />} />
+
+        {/* Indusive Sports > Our Products */}
+        <Route path="/indusive-sports/products/football-turf" element={<FootballTurf />} />
+        <Route path="/indusive-sports/products/hockey-turf" element={<HockeyTurf />} />
+        <Route path="/indusive-sports/products/tennis-turf" element={<TennisTurf />} />
+        <Route path="/indusive-sports/products/multi-purpose-turf" element={<MultiPurposeTurf />} />
+        <Route path="/indusive-sports/products/landscape-leisure-turf" element={<LandscapeLeisureTurf />} />
+
+        {/* Main pages */}
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/our-clients" element={<OurClients />} />
+        <Route path="/our-team" element={<OurTeam />} />
       </Routes>
     </div>
   );
