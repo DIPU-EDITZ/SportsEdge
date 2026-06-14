@@ -24,7 +24,7 @@ import OurTeam from './pages/OurTeam';
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-[#08060d] text-white font-sans overflow-x-hidden antialiased">
+    <div className="relative min-h-screen bg-white text-gray-900 font-sans overflow-x-hidden antialiased">
       {/* Global Navigation Bar */}
       <div className="absolute top-0 left-0 right-0 z-50">
         <Navbar />

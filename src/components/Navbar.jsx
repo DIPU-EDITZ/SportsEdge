@@ -1,17 +1,27 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, ArrowRight, ChevronDown, ChevronRight } from 'lucide-react';
+import { Menu, X, ArrowRight, ChevronDown } from 'lucide-react';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [indusiveOpen, setIndusiveOpen] = useState(false);
-  const [productsOpen, setProductsOpen] = useState(false);
+  const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
   const [mobileIndusiveOpen, setMobileIndusiveOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const indusiveRef = useRef(null);
+  const productsDropdownRef = useRef(null);
   let indusiveTimer = useRef(null);
   let productsTimer = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleIndusiveEnter = () => {
     clearTimeout(indusiveTimer.current);
@@ -20,15 +30,17 @@ function Navbar() {
   const handleIndusiveLeave = () => {
     indusiveTimer.current = setTimeout(() => {
       setIndusiveOpen(false);
-      setProductsOpen(false);
     }, 150);
   };
+
   const handleProductsEnter = () => {
     clearTimeout(productsTimer.current);
-    setProductsOpen(true);
+    setProductsDropdownOpen(true);
   };
   const handleProductsLeave = () => {
-    productsTimer.current = setTimeout(() => setProductsOpen(false), 150);
+    productsTimer.current = setTimeout(() => {
+      setProductsDropdownOpen(false);
+    }, 150);
   };
 
   const products = [
@@ -42,20 +54,18 @@ function Navbar() {
   const indusiveLinks = [
     { name: 'Our Partners', path: '/indusive-sports/our-partners' },
     { name: 'Product Range', path: '/indusive-sports/product-range' },
-    { name: 'Our Products', path: null, children: products },
     { name: 'Epufloor', path: '/indusive-sports/epufloor' },
     { name: 'Redexim', path: '/indusive-sports/redexim' },
   ];
 
   const mainLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Testimonials', path: '/testimonials' },
     { name: 'Our Clients', path: '/our-clients' },
     { name: 'Our Team', path: '/our-team' },
   ];
 
   return (
-    <nav className="relative z-50 px-6 py-4 md:px-12 lg:px-24 flex items-center justify-between">
+    <nav className={`fixed top-0 w-full z-50 px-6 py-4 md:px-12 lg:px-24 flex items-center justify-between transition-all duration-300 ${scrolled ? 'bg-[#08060d] shadow-lg py-3 md:py-3' : 'bg-[#08060d] border-b border-white/5'}`}>
       {/* Mobile Menu Icon (Left aligned for Mobile/Tablet) */}
       <div className="flex items-center gap-4 lg:hidden">
         <button
@@ -106,6 +116,52 @@ function Navbar() {
           Home
         </NavLink>
 
+        {/* Our Products Dropdown */}
+        <div
+          className="relative"
+          ref={productsDropdownRef}
+          onMouseEnter={handleProductsEnter}
+          onMouseLeave={handleProductsLeave}
+        >
+          <button
+            className={`flex items-center gap-1 text-sm font-medium transition-colors duration-200 hover:text-white ${
+              productsDropdownOpen ? 'text-white font-semibold' : 'text-white/70'
+            }`}
+          >
+            Our Products
+            <ChevronDown
+              size={14}
+              className={`transition-transform duration-200 ${productsDropdownOpen ? 'rotate-180 text-[#bef264]' : ''}`}
+            />
+          </button>
+
+          {/* Dropdown Panel */}
+          <div
+            className={`absolute top-full left-0 mt-3 w-56 bg-[#121622] border border-[#bef264]/20 rounded-2xl p-2 shadow-2xl transition-all duration-200 origin-top ${
+              productsDropdownOpen
+                ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto'
+                : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
+            }`}
+          >
+            <div className="absolute top-0 left-8 w-16 h-0.5 bg-gradient-to-r from-transparent via-[#bef264] to-transparent rounded-full" />
+            {products.map((p) => (
+              <NavLink
+                key={p.name}
+                to={p.path}
+                className={({ isActive }) =>
+                  `block text-sm font-medium py-2.5 px-4 rounded-xl transition-all duration-150 ${
+                    isActive
+                      ? 'text-[#08060d] bg-[#bef264]'
+                      : 'text-white/80 hover:text-white hover:bg-white/5'
+                  }`
+                }
+              >
+                {p.name}
+              </NavLink>
+            ))}
+          </div>
+        </div>
+
         {/* Indusive Sports Dropdown */}
         <div
           className="relative"
@@ -127,75 +183,32 @@ function Navbar() {
 
           {/* Dropdown Panel */}
           <div
-            className={`absolute top-full left-0 mt-3 w-56 bg-gradient-to-br from-[#121622]/98 to-[#0b0c10]/98 backdrop-blur-2xl border border-[#bef264]/20 rounded-2xl p-2 shadow-2xl transition-all duration-200 origin-top ${
+            className={`absolute top-full left-0 mt-3 w-56 bg-[#121622] border border-[#bef264]/20 rounded-2xl p-2 shadow-2xl transition-all duration-200 origin-top ${
               indusiveOpen
                 ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto'
                 : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
             }`}
           >
             <div className="absolute top-0 left-8 w-16 h-0.5 bg-gradient-to-r from-transparent via-[#bef264] to-transparent rounded-full" />
-            {indusiveLinks.map((item) =>
-              item.children ? (
-                /* Nested: Our Products */
-                <div
-                  key={item.name}
-                  className="relative"
-                  onMouseEnter={handleProductsEnter}
-                  onMouseLeave={handleProductsLeave}
-                >
-                  <button className="w-full flex items-center justify-between text-white/80 hover:text-white hover:bg-white/5 text-sm font-medium py-2.5 px-4 rounded-xl transition-all duration-150 group/prod">
-                    <span>{item.name}</span>
-                    <ChevronRight
-                      size={14}
-                      className={`transition-transform duration-200 ${productsOpen ? 'translate-x-1 text-[#bef264]' : ''}`}
-                    />
-                  </button>
-                  {/* Products Sub-Dropdown */}
-                  <div
-                    className={`absolute top-0 left-full ml-2 w-56 bg-gradient-to-br from-[#121622]/98 to-[#0b0c10]/98 backdrop-blur-2xl border border-[#bef264]/20 rounded-2xl p-2 shadow-2xl transition-all duration-200 origin-top-left ${
-                      productsOpen
-                        ? 'opacity-100 scale-100 translate-x-0 pointer-events-auto'
-                        : 'opacity-0 scale-95 -translate-x-2 pointer-events-none'
-                    }`}
-                  >
-                    <div className="absolute top-0 left-6 w-12 h-0.5 bg-gradient-to-r from-transparent via-[#bef264] to-transparent rounded-full" />
-                    {products.map((p) => (
-                      <NavLink
-                        key={p.name}
-                        to={p.path}
-                        className={({ isActive }) =>
-                          `block text-sm font-medium py-2.5 px-4 rounded-xl transition-all duration-150 ${
-                            isActive
-                              ? 'text-[#08060d] bg-[#bef264]'
-                              : 'text-white/80 hover:text-white hover:bg-white/5'
-                          }`
-                        }
-                      >
-                        {p.name}
-                      </NavLink>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                <NavLink
-                  key={item.name}
-                  to={item.path}
-                  className={({ isActive }) =>
-                    `block text-sm font-medium py-2.5 px-4 rounded-xl transition-all duration-150 ${
-                      isActive
-                        ? 'text-[#08060d] bg-[#bef264]'
-                        : 'text-white/80 hover:text-white hover:bg-white/5'
-                    }`
-                  }
-                >
-                  {item.name}
-                </NavLink>
-              )
-            )}
+            {indusiveLinks.map((item) => (
+              <NavLink
+                key={item.name}
+                to={item.path}
+                className={({ isActive }) =>
+                  `block text-sm font-medium py-2.5 px-4 rounded-xl transition-all duration-150 ${
+                    isActive
+                      ? 'text-[#08060d] bg-[#bef264]'
+                      : 'text-white/80 hover:text-white hover:bg-white/5'
+                  }`
+                }
+              >
+                {item.name}
+              </NavLink>
+            ))}
           </div>
         </div>
 
-        {/* Remaining main links */}
+        {/* Testimonials, Our Clients, Our Team */}
         {mainLinks.slice(1).map((link) => (
           <NavLink
             key={link.name}
@@ -215,10 +228,10 @@ function Navbar() {
       <div>
         <Link
           to="/contact"
-          className="group flex items-center gap-3 bg-white text-[#08060d] font-semibold py-2 px-4 md:py-2.5 md:px-5 rounded-full hover:bg-opacity-95 transition-all shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 duration-200"
+          className="group flex items-center gap-3 bg-[#bef264] text-[#08060d] font-semibold py-2 px-4 md:py-2.5 md:px-5 rounded-full hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 duration-200"
         >
           <span className="text-xs md:text-sm tracking-wide">Contact Us</span>
-          <div className="bg-[#bef264] text-[#08060d] p-1.5 md:p-2 rounded-full transition-transform group-hover:translate-x-1 duration-200">
+          <div className="bg-[#08060d] text-[#bef264] p-1.5 md:p-2 rounded-full transition-transform group-hover:translate-x-1 duration-200">
             <ArrowRight size={14} className="stroke-[2.5]" />
           </div>
         </Link>
@@ -234,7 +247,7 @@ function Navbar() {
 
       {/* Mobile Menu Panel */}
       <div
-        className={`absolute top-full left-0 right-0 mt-3 mx-4 bg-gradient-to-br from-[#121622]/95 to-[#0b0c10]/95 backdrop-blur-2xl border-2 border-[#bef264]/20 rounded-3xl p-6 shadow-2xl z-40 flex flex-col gap-2 lg:hidden transition-all duration-300 ease-in-out origin-top ${
+        className={`absolute top-full left-0 right-0 mt-3 mx-4 bg-[#121622] border-2 border-[#bef264]/20 rounded-3xl p-6 shadow-2xl z-40 flex flex-col gap-2 lg:hidden transition-all duration-300 ease-in-out origin-top ${
           isOpen
             ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto'
             : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
@@ -263,6 +276,44 @@ function Navbar() {
           )}
         </NavLink>
 
+        {/* Our Products Accordion */}
+        <div>
+          <button
+            onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
+            className="w-full text-base font-bold py-3 px-5 rounded-2xl transition-all duration-200 flex items-center justify-between text-white/80 hover:text-white hover:bg-white/5"
+          >
+            <span>Our Products</span>
+            <ChevronDown
+              size={16}
+              className={`transition-transform duration-200 text-[#bef264] ${mobileProductsOpen ? 'rotate-180' : ''}`}
+            />
+          </button>
+          <div
+            className={`overflow-hidden transition-all duration-300 ${
+              mobileProductsOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
+            }`}
+          >
+            <div className="ml-4 mt-1 flex flex-col gap-1 border-l-2 border-[#bef264]/20 pl-3">
+              {products.map((p) => (
+                <NavLink
+                  key={p.name}
+                  to={p.path}
+                  onClick={() => setIsOpen(false)}
+                  className={({ isActive }) =>
+                    `block text-sm font-semibold py-2.5 px-4 rounded-xl transition-all duration-150 ${
+                      isActive
+                        ? 'text-[#08060d] bg-[#bef264]'
+                        : 'text-white/70 hover:text-white hover:bg-white/5'
+                    }`
+                  }
+                >
+                  {p.name}
+                </NavLink>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* Indusive Sports Accordion */}
         <div>
           <button
@@ -281,61 +332,22 @@ function Navbar() {
             }`}
           >
             <div className="ml-4 mt-1 flex flex-col gap-1 border-l-2 border-[#bef264]/30 pl-3">
-              {indusiveLinks.map((item) =>
-                item.children ? (
-                  <div key={item.name}>
-                    <button
-                      onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
-                      className="w-full text-sm font-semibold py-2.5 px-4 rounded-xl transition-all duration-200 flex items-center justify-between text-white/70 hover:text-white hover:bg-white/5"
-                    >
-                      <span>{item.name}</span>
-                      <ChevronDown
-                        size={14}
-                        className={`transition-transform duration-200 text-[#bef264] ${mobileProductsOpen ? 'rotate-180' : ''}`}
-                      />
-                    </button>
-                    <div
-                      className={`overflow-hidden transition-all duration-300 ${
-                        mobileProductsOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
-                      }`}
-                    >
-                      <div className="ml-4 mt-1 flex flex-col gap-1 border-l-2 border-[#bef264]/20 pl-3">
-                        {products.map((p) => (
-                          <NavLink
-                            key={p.name}
-                            to={p.path}
-                            onClick={() => setIsOpen(false)}
-                            className={({ isActive }) =>
-                              `block text-sm font-medium py-2 px-3 rounded-lg transition-all duration-150 ${
-                                isActive
-                                  ? 'text-[#08060d] bg-[#bef264]'
-                                  : 'text-white/60 hover:text-white hover:bg-white/5'
-                              }`
-                            }
-                          >
-                            {p.name}
-                          </NavLink>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                ) : (
-                  <NavLink
-                    key={item.name}
-                    to={item.path}
-                    onClick={() => setIsOpen(false)}
-                    className={({ isActive }) =>
-                      `block text-sm font-semibold py-2.5 px-4 rounded-xl transition-all duration-150 ${
-                        isActive
-                          ? 'text-[#08060d] bg-[#bef264]'
-                          : 'text-white/70 hover:text-white hover:bg-white/5'
-                      }`
-                    }
-                  >
-                    {item.name}
-                  </NavLink>
-                )
-              )}
+              {indusiveLinks.map((item) => (
+                <NavLink
+                  key={item.name}
+                  to={item.path}
+                  onClick={() => setIsOpen(false)}
+                  className={({ isActive }) =>
+                    `block text-sm font-semibold py-2.5 px-4 rounded-xl transition-all duration-150 ${
+                      isActive
+                        ? 'text-[#08060d] bg-[#bef264]'
+                        : 'text-white/70 hover:text-white hover:bg-white/5'
+                    }`
+                  }
+                >
+                  {item.name}
+                </NavLink>
+              ))}
             </div>
           </div>
         </div>
