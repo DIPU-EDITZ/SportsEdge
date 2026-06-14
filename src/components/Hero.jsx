@@ -31,18 +31,18 @@ function Hero() {
           </Link>
         </div>
         <div className="mt-10 flex items-center justify-center lg:justify-start gap-8">
-          <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-xl shadow-sm border border-white/40">
+          <div className="flex items-center gap-2 bg-white/30 backdrop-blur-md px-4 py-2 rounded-xl shadow-sm border border-white/40">
             <Award className="text-[#84cc16]" size={24} />
             <div className="text-left">
               <div className="text-xl font-black text-gray-900 leading-none">100+</div>
-              <div className="text-xs text-gray-700 font-bold uppercase tracking-wider">Projects</div>
+              <div className="text-xs text-gray-200 font-bold uppercase tracking-wider">Projects</div>
             </div>
           </div>
-          <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-xl shadow-sm border border-white/40">
+          <div className="flex items-center gap-2 bg-white/30 backdrop-blur-sm px-4 py-2 rounded-xl shadow-sm border border-white/40">
             <ShieldCheck className="text-[#84cc16]" size={24} />
             <div className="text-left">
               <div className="text-xl font-black text-gray-900 leading-none">15+</div>
-              <div className="text-xs text-gray-700 font-bold uppercase tracking-wider">Years Exp.</div>
+              <div className="text-xs text-gray-200 font-bold uppercase tracking-wider">Years Exp.</div>
             </div>
           </div>
         </div>
