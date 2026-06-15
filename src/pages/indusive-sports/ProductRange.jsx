@@ -45,8 +45,8 @@ const products = [
     features: ['High Grip', 'Seamless Finish', 'Impact Protection']
   },
   {
-    title: 'Running Tracks',
-    category: 'PU Track Systems',
+    title: 'EPDM Running Tracks',
+    category: 'EPDM Track Systems',
     description: 'World Athletics (IAAF) certified running tracks for professional stadiums, schools, and training facilities.',
     path: '/indusive-sports/product-range',
     image: runningTracks,

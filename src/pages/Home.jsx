@@ -81,11 +81,10 @@ const pillars = [
 ];
 
 const partners = [
-  { name: 'Indusive Sports', desc: 'Primary turf manufacturing partner' },
+  { name: 'Dellin Turf', desc: 'Primary turf manufacturing partner' },
   { name: 'EPU Floor', desc: 'Polyurethane flooring systems' },
-  { name: 'Redexim', desc: 'Turf maintenance machinery' },
-  { name: 'Trocellen', desc: 'Foam underlayment products' },
-  { name: 'Conica', desc: 'Polyurethane sports surfaces' },
+  { name: 'Stihl India', desc: 'Turf maintenance machinery' },
+  { name: 'Pace Court', desc: 'Primary acrylic manufacturing partner' },
 ];
 
 /* ═══════════════════════════════════════════
@@ -224,13 +223,12 @@ function Home() {
               SPORTS-EDGE provides innovative sports surface systems which reduce
               leg, ligament and lower back strains and injuries. Based in Kolkata,
               India, we provide international standard surfaces for sports such as
-              Tennis, Badminton, Squash, Basketball, Table Tennis, Gymnastics and
-              many more.
+              Cricket, Football, Tennis, Batminton, Pickleball, Volleyball, Basketball, Squash and many more.
             </p>
             <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
               We strive for superior customer satisfaction by recommending the most
               suitable surface as per client needs. We are seen as a knowledgeable
-              solution provider for sports infrastructure in the country — known for
+              solution provider for sports infrastructure in the sports industry — known for
               providing ground-breaking products combined with flawless execution.
             </p>
 
@@ -415,7 +413,7 @@ function Home() {
           </div>
 
           {/* Partner Cards */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2  sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {partners.map((partner) => (
               <div
                 key={partner.name}

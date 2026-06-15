@@ -10,7 +10,7 @@ function Hero() {
       <div className="lg:col-span-7 text-center lg:text-left">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-white/40 mb-6 shadow-sm">
           <ShieldCheck size={16} className="text-[#84cc16]" />
-          <span className="text-xs font-bold text-gray-900 tracking-wide uppercase">India's #1 Sports Flooring Manufacturer</span>
+          <span className="text-xs font-bold text-gray-900 tracking-wide uppercase">Eastern India's No. 1 Sports Infrastructure Company</span>
         </div>
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-6">
           Premium <span className="text-gray-800">Sports</span><br />
@@ -41,7 +41,7 @@ function Hero() {
           <div className="flex items-center gap-2 bg-white/30 backdrop-blur-sm px-4 py-2 rounded-xl shadow-sm border border-white/40">
             <ShieldCheck className="text-[#84cc16]" size={24} />
             <div className="text-left">
-              <div className="text-xl font-black text-gray-900 leading-none">15+</div>
+              <div className="text-xl font-black text-gray-900 leading-none">10+</div>
               <div className="text-xs text-gray-200 font-bold uppercase tracking-wider">Years Exp.</div>
             </div>
           </div>
