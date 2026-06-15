@@ -38,8 +38,8 @@ function Contact() {
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Corporate Office</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    23/24, Rabindra Sarani, Ground Floor,<br />
-                    Kolkata - 700 073, West Bengal, India
+                    100/22, Julpia Road, Chakramnagar,<br />
+                    Kolkata - 700 104, West Bengal, India
                   </p>
                 </div>
               </div>
@@ -51,7 +51,8 @@ function Contact() {
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Phone</h4>
                   <p className="text-gray-600">
-                    <a href="tel:+918045479633" className="hover:text-[#84cc16] transition-colors">+91 8045479633</a>
+                    <a href="tel:+919836492363" className="hover:text-[#84cc16] transition-colors">+91 9836492363</a>
+                    <a href="tel:+919038195226" className="hover:text-[#84cc16] transition-colors">+91 9038195226</a>
                   </p>
                 </div>
               </div>
@@ -63,7 +64,7 @@ function Contact() {
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Email</h4>
                   <p className="text-gray-600">
-                    <a href="mailto:info@sportsedge.in" className="hover:text-[#84cc16] transition-colors">info@sportsedge.in</a>
+                    <a href="mailto:sportsedge2025@gmail.com" className="hover:text-[#84cc16] transition-colors">sportsedge2025@gmail.com</a>
                   </p>
                 </div>
               </div>

@@ -83,7 +83,7 @@ function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="text-[#bef264] mt-0.5 shrink-0" />
                 <span className="text-white/50 text-sm leading-relaxed">
-                  100/22, Rabindra Sarani,<br />Chakramnagar, Kolkata-104
+                  100/22, Julpia Road,<br />Chakramnagar, Kolkata-104
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -92,8 +92,8 @@ function Footer() {
                   <a href="tel:+919836492363" className="text-white/50 hover:text-[#bef264] text-sm transition-colors duration-200">
                     +91 9836492363
                   </a>
-                  <a href="tel:+919007010562" className="text-white/50 hover:text-[#bef264] text-sm transition-colors duration-200">
-                    +91 9007010562
+                  <a href="tel:+919038195226" className="text-white/50 hover:text-[#bef264] text-sm transition-colors duration-200">
+                    +91 9038195226
                   </a>
                 </div>
               </div>
