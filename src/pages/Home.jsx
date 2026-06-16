@@ -81,7 +81,7 @@ const pillars = [
 ];
 
 const partners = [
-  { name: 'Dellin Turf', desc: 'Primary turf manufacturing partner' },
+  { name: 'Bellin Turf', desc: 'Primary turf manufacturing partner' },
   { name: 'EPU Floor', desc: 'Polyurethane flooring systems' },
   { name: 'Stihl India', desc: 'Turf maintenance machinery' },
   { name: 'Pace Court', desc: 'Primary acrylic manufacturing partner' },
