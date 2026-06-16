@@ -118,7 +118,7 @@ function Contact() {
               </div>
 
               <button type="submit" className="w-full text-[#08060d] bg-[#bef264] hover:bg-[#84cc16] focus:ring-4 focus:outline-none focus:ring-[#bef264]/50 font-bold rounded-xl text-base px-5 py-4 text-center transition-colors">
-                Send Inquiry
+                Send Enquiry
               </button>
             </form>
           </div>

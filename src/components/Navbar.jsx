@@ -42,7 +42,7 @@ function Navbar() {
   const mainLinks = [
     { name: 'Home', path: '/' },
     { name: 'Our Projects', path: '/our-projects' },
-    { name: 'Our Team', path: '/our-team' },
+    { name: 'Our Clients', path: '/our-clients' },
   ];
 
   return (

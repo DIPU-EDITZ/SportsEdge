@@ -20,7 +20,6 @@ import LandscapeLeisureTurf from './pages/indusive-sports/products/LandscapeLeis
 // Top-level pages
 import Testimonials from './pages/Testimonials';
 import OurClients from './pages/OurClients';
-import OurTeam from './pages/OurTeam';
 
 function App() {
   return (
@@ -51,7 +50,6 @@ function App() {
         {/* Main pages */}
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/our-clients" element={<OurClients />} />
-        <Route path="/our-team" element={<OurTeam />} />
       </Routes>
     </div>
   );

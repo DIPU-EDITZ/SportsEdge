@@ -8,7 +8,6 @@ function Footer() {
     { name: 'Product Range', path: '/indusive-sports/product-range' },
     { name: 'Our Partners', path: '/indusive-sports/our-partners' },
     { name: 'Our Clients', path: '/our-clients' },
-    { name: 'Our Team', path: '/our-team' },
     { name: 'Contact Us', path: '/contact' },
   ];
 
