@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Activity, Circle, Droplets } from 'lucide-react';
 import Footer from '../../components/Footer';
 
-import footballTurf from '../../assets/football turf.avif';
+import footballTurf from '../../assets/football court.avif';
 import hockeyCourt from '../../assets/hocky court.avif';
 import tennisCourt from '../../assets/tennis court.avif';
 import basketballCourt from '../../assets/basketball court.avif';
 import runningTracks from '../../assets/running tracks.avif';
 import multipurposeCourt from '../../assets/multipurpose court.avif';
 import swimmingCourt from '../../assets/swimming court.avif';
+import badmintonCourt from '../../assets/batminton court.jpg';
+import woodenCourt from '../../assets/wooden court.avif';
+import ppTilesCourt from '../../assets/PP tiles court.avif';
 
 const products = [
   {
@@ -67,6 +70,30 @@ const products = [
     path: '/indusive-sports/products/multi-purpose-turf',
     image: multipurposeCourt,
     features: ['Space Saving', 'Multi-Sport Line Marking', 'Cost Effective']
+  },
+  {
+    title: 'Badminton Court',
+    category: 'Indoor & Outdoor Systems',
+    description: 'High-performance synthetic surfaces offering excellent grip, shock absorption, and true bounce for all levels of play.',
+    path: '/indusive-sports/products/badminton-court',
+    image: badmintonCourt,
+    features: ['Excellent Grip', 'Shock Absorption', 'True Bounce']
+  },
+  {
+    title: 'Wooden Court',
+    category: 'Indoor Systems',
+    description: 'Premium wooden courts designed for professional indoor sports, featuring advanced sub-floor systems for optimal energy return.',
+    path: '/indusive-sports/products/wooden-court',
+    image: woodenCourt,
+    features: ['Premium Wood', 'Energy Return', 'Professional Grade']
+  },
+  {
+    title: 'PP Tiles Court',
+    category: 'Interlocking Tiles',
+    description: 'Versatile and durable interlocking PP tiles for outdoor and indoor multi-sport courts, providing easy installation and all-weather use.',
+    path: '/indusive-sports/products/pp-tiles-court',
+    image: ppTilesCourt,
+    features: ['Easy Installation', 'All-Weather', 'High Durability']
   }
 ];
 

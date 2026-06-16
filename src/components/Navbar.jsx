@@ -4,15 +4,11 @@ import { Menu, X, ArrowRight, ChevronDown } from 'lucide-react';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [indusiveOpen, setIndusiveOpen] = useState(false);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
-  const [mobileIndusiveOpen, setMobileIndusiveOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const indusiveRef = useRef(null);
   const productsDropdownRef = useRef(null);
-  let indusiveTimer = useRef(null);
   let productsTimer = useRef(null);
 
   useEffect(() => {
@@ -22,16 +18,6 @@ function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const handleIndusiveEnter = () => {
-    clearTimeout(indusiveTimer.current);
-    setIndusiveOpen(true);
-  };
-  const handleIndusiveLeave = () => {
-    indusiveTimer.current = setTimeout(() => {
-      setIndusiveOpen(false);
-    }, 150);
-  };
 
   const handleProductsEnter = () => {
     clearTimeout(productsTimer.current);
@@ -44,23 +30,18 @@ function Navbar() {
   };
 
   const products = [
+    { name: 'All Product Range', path: '/indusive-sports/product-range' },
     { name: 'Football Turf', path: '/indusive-sports/products/football-turf' },
     { name: 'Hockey Turf', path: '/indusive-sports/products/hockey-turf' },
-    { name: 'Tennis Turf', path: '/indusive-sports/products/tennis-turf' },
-    { name: 'Multi-Purpose Turf', path: '/indusive-sports/products/multi-purpose-turf' },
-    { name: 'Landscape & Leisure Turf', path: '/indusive-sports/products/landscape-leisure-turf' },
-  ];
-
-  const indusiveLinks = [
-    { name: 'Our Partners', path: '/indusive-sports/our-partners' },
-    { name: 'Product Range', path: '/indusive-sports/product-range' },
-    { name: 'Epufloor', path: '/indusive-sports/epufloor' },
-    { name: 'Redexim', path: '/indusive-sports/redexim' },
+    { name: 'Badminton Court', path: '/indusive-sports/products/badminton-court' },
+    { name: 'Wooden Court', path: '/indusive-sports/products/wooden-court' },
+    { name: 'Acrylic Court', path: '/indusive-sports/products/acrylic-court' },
+    { name: 'PP Tiles Court', path: '/indusive-sports/products/pp-tiles-court' },
   ];
 
   const mainLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Our Clients', path: '/our-clients' },
+    { name: 'Our Projects', path: '/our-projects' },
     { name: 'Our Team', path: '/our-team' },
   ];
 
@@ -89,15 +70,17 @@ function Navbar() {
             }`}
           />
         </button>
-        <Link to="/" className="text-white text-2xl font-bold tracking-tight">
-          SportsEdge
+        <Link to="/" className="flex flex-col">
+          <span className="text-white text-2xl font-bold tracking-tight leading-none">SportsEdge</span>
+          <span className="text-[#bef264] text-[9px] font-normal mt-0.5 lowercase">build with us</span>
         </Link>
       </div>
 
       {/* Desktop Logo */}
       <div className="hidden lg:block">
-        <Link to="/" className="text-white text-3xl font-bold tracking-tight hover:opacity-90 transition-opacity">
-          SportsEdge
+        <Link to="/" className="flex flex-col hover:opacity-90 transition-opacity">
+          <span className="text-white text-3xl font-bold tracking-tight leading-none">SportsEdge</span>
+          <span className="text-[#bef264] text-[10px] font-normal mt-0.5 lowercase">build with us</span>
         </Link>
       </div>
 
@@ -162,53 +145,7 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Indusive Sports Dropdown */}
-        <div
-          className="relative"
-          ref={indusiveRef}
-          onMouseEnter={handleIndusiveEnter}
-          onMouseLeave={handleIndusiveLeave}
-        >
-          <button
-            className={`flex items-center gap-1 text-sm font-medium transition-colors duration-200 hover:text-white ${
-              indusiveOpen ? 'text-white font-semibold' : 'text-white/70'
-            }`}
-          >
-            Indusive Sports
-            <ChevronDown
-              size={14}
-              className={`transition-transform duration-200 ${indusiveOpen ? 'rotate-180 text-[#bef264]' : ''}`}
-            />
-          </button>
-
-          {/* Dropdown Panel */}
-          <div
-            className={`absolute top-full left-0 mt-3 w-56 bg-[#121622] border border-[#bef264]/20 rounded-2xl p-2 shadow-2xl transition-all duration-200 origin-top ${
-              indusiveOpen
-                ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto'
-                : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
-            }`}
-          >
-            <div className="absolute top-0 left-8 w-16 h-0.5 bg-gradient-to-r from-transparent via-[#bef264] to-transparent rounded-full" />
-            {indusiveLinks.map((item) => (
-              <NavLink
-                key={item.name}
-                to={item.path}
-                className={({ isActive }) =>
-                  `block text-sm font-medium py-2.5 px-4 rounded-xl transition-all duration-150 ${
-                    isActive
-                      ? 'text-[#08060d] bg-[#bef264]'
-                      : 'text-white/80 hover:text-white hover:bg-white/5'
-                  }`
-                }
-              >
-                {item.name}
-              </NavLink>
-            ))}
-          </div>
-        </div>
-
-        {/* Testimonials, Our Clients, Our Team */}
+        {/* Our Projects, Our Team */}
         {mainLinks.slice(1).map((link) => (
           <NavLink
             key={link.name}
@@ -314,45 +251,7 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Indusive Sports Accordion */}
-        <div>
-          <button
-            onClick={() => setMobileIndusiveOpen(!mobileIndusiveOpen)}
-            className="w-full text-base font-bold py-3 px-5 rounded-2xl transition-all duration-200 flex items-center justify-between text-white/80 hover:text-white hover:bg-white/5"
-          >
-            <span>Indusive Sports</span>
-            <ChevronDown
-              size={16}
-              className={`transition-transform duration-200 text-[#bef264] ${mobileIndusiveOpen ? 'rotate-180' : ''}`}
-            />
-          </button>
-          <div
-            className={`overflow-hidden transition-all duration-300 ${
-              mobileIndusiveOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
-            }`}
-          >
-            <div className="ml-4 mt-1 flex flex-col gap-1 border-l-2 border-[#bef264]/30 pl-3">
-              {indusiveLinks.map((item) => (
-                <NavLink
-                  key={item.name}
-                  to={item.path}
-                  onClick={() => setIsOpen(false)}
-                  className={({ isActive }) =>
-                    `block text-sm font-semibold py-2.5 px-4 rounded-xl transition-all duration-150 ${
-                      isActive
-                        ? 'text-[#08060d] bg-[#bef264]'
-                        : 'text-white/70 hover:text-white hover:bg-white/5'
-                    }`
-                  }
-                >
-                  {item.name}
-                </NavLink>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Testimonials, Our Clients, Our Team */}
+        {/* Our Projects, Our Team */}
         {mainLinks.slice(1).map((link) => (
           <NavLink
             key={link.name}
@@ -364,7 +263,7 @@ function Navbar() {
                   ? 'text-[#08060d] bg-[#bef264] shadow-[0_4px_14px_rgba(190,242,100,0.3)]'
                   : 'text-white/80 hover:text-white hover:bg-white/5 hover:translate-x-1'
               }`
-            }
+          }
           >
             {({ isActive }) => (
               <>
