@@ -289,7 +289,7 @@ function Home() {
           </div>
 
           {/* Image */}
-          <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-xl border border-gray-100">
+          <div className="relative rounded-4xl overflow-hidden aspect-4/3 shadow-xl border border-gray-100">
             <img
               src={footballCourt}
               alt="Sports Infrastructure by SportsEdge"
@@ -328,7 +328,7 @@ function Home() {
               <Link
                 key={sport.name}
                 to={sport.path}
-                className="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-gray-100 border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                className="group relative rounded-2xl overflow-hidden aspect-4/3 bg-gray-100 border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
               >
                 <img
                   src={sport.image}
@@ -337,7 +337,7 @@ function Home() {
                   loading="lazy"
                 />
                 {/* Gradient overlay for text readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-gray-900/90 via-gray-900/20 to-transparent" />
                 {/* Text */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-white font-bold text-xl md:text-2xl mb-2">
@@ -402,7 +402,7 @@ function Home() {
               return (
                 <div
                   key={pillar.title}
-                  className="bg-gray-50 border border-gray-200 rounded-[2rem] p-8 md:p-10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+                  className="bg-gray-50 border border-gray-200 rounded-4xl p-8 md:p-10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="w-16 h-16 rounded-2xl bg-white shadow-sm border border-gray-100 flex items-center justify-center mb-8">
                     <Icon size={32} className="text-[#84cc16]" />

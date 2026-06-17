@@ -134,13 +134,13 @@ export default function HockeyTurf() {
           </div>
 
           {/* Image */}
-          <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-xl border border-gray-100 group">
+          <div className="relative rounded-4xl overflow-hidden aspect-4/3 shadow-xl border border-gray-100 group">
             <img
               src={hockyCourtImg}
               alt="Hockey Turf System"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/10 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-linear-to-t from-gray-900/10 to-transparent pointer-events-none" />
           </div>
         </div>
       </section>
@@ -191,7 +191,7 @@ export default function HockeyTurf() {
           </div>
 
           {/* FastPro HF Series */}
-          <div className="bg-gray-50 rounded-[2rem] p-8 md:p-12 border border-gray-200 shadow-inner">
+          <div className="bg-gray-50 rounded-4xl p-8 md:p-12 border border-gray-200 shadow-inner">
             <SectionLabel>Flagship Product</SectionLabel>
             <h2 className="text-3xl font-extrabold text-gray-900 mb-8">FastPro HF Series</h2>
             <ul className="space-y-6">

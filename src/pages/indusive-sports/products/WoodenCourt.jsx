@@ -119,13 +119,13 @@ export default function WoodenCourt() {
           </div>
 
           {/* Image */}
-          <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-xl border border-gray-100 group">
+          <div className="relative rounded-4xl overflow-hidden aspect-4/3 shadow-xl border border-gray-100 group">
             <img
               src={woodenCourtImg}
               alt="Wooden Court System"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/10 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-linear-to-t from-gray-900/10 to-transparent pointer-events-none" />
           </div>
         </div>
       </section>
@@ -187,7 +187,7 @@ export default function WoodenCourt() {
               ))}
             </div>
             
-            <div className="lg:col-span-5 bg-gray-50 border border-gray-200 rounded-[2rem] p-8 md:p-12 shadow-inner group flex items-center justify-center">
+            <div className="lg:col-span-5 bg-gray-50 border border-gray-200 rounded-4xl p-8 md:p-12 shadow-inner group flex items-center justify-center">
                <div className="text-center">
                   <Award size={48} className="text-[#84cc16] mx-auto mb-4" />
                   <h3 className="text-xl font-bold mb-2">Heritage Grade</h3>

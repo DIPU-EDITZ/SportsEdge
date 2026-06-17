@@ -131,7 +131,7 @@ function ProductRange() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product, idx) => (
             <div key={idx} className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col">
-              <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
+              <div className="relative aspect-4/3 overflow-hidden bg-gray-100">
                 <img 
                   src={product.image} 
                   alt={product.title} 
@@ -142,9 +142,9 @@ function ProductRange() {
                 </div>
               </div>
               
-              <div className="p-6 md:p-8 flex-grow flex flex-col">
+              <div className="p-6 md:p-8 grow flex flex-col">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">{product.title}</h3>
-                <p className="text-gray-600 text-sm mb-6 flex-grow">{product.description}</p>
+                <p className="text-gray-600 text-sm mb-6 grow">{product.description}</p>
                 
                 <div className="mb-8">
                   <ul className="space-y-2">

@@ -50,7 +50,7 @@ function Testimonials() {
           {testimonials.map((testimonial, idx) => (
             <div key={idx} className="bg-white p-8 md:p-10 rounded-2xl border border-gray-100 shadow-sm relative flex flex-col hover:shadow-lg transition-shadow duration-300">
               <Quote size={40} className="text-[#bef264]/40 absolute top-6 right-6" />
-              <p className="text-gray-600 leading-relaxed italic mb-8 relative z-10 flex-grow">
+              <p className="text-gray-600 leading-relaxed italic mb-8 relative z-10 grow">
                 "{testimonial.quote}"
               </p>
               <div className="flex items-center gap-4 border-t border-gray-100 pt-6">

@@ -125,14 +125,14 @@ export default function FootballTurf() {
           </div>
 
           {/* Image */}
-          <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-xl border border-gray-100 group">
+          <div className="relative rounded-4xl overflow-hidden aspect-4/3 shadow-xl border border-gray-100 group">
             <img
               src={footballCourtImg}
               alt="Football Turf System"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             {/* Subtle gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/10 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-linear-to-t from-gray-900/10 to-transparent pointer-events-none" />
           </div>
         </div>
       </section>
@@ -175,8 +175,8 @@ export default function FootballTurf() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             {/* Diagram */}
-            <div className="lg:col-span-5 bg-gray-50 border border-gray-200 rounded-[2rem] p-8 md:p-12 shadow-inner group">
-              <div className="aspect-[4/3] relative flex items-center justify-center">
+            <div className="lg:col-span-5 bg-gray-50 border border-gray-200 rounded-4xl p-8 md:p-12 shadow-inner group">
+              <div className="aspect-4/3 relative flex items-center justify-center">
                 <img
                   src="/diagram.png"
                   alt="Turf System Diagram"

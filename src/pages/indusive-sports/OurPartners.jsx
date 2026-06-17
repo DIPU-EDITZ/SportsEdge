@@ -62,7 +62,7 @@ function OurPartners() {
         <div className="max-w-5xl mx-auto flex flex-col gap-8">
           {partners.map((partner, idx) => (
             <div key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between hover:shadow-md transition-shadow duration-300">
-              <div className="flex-grow">
+              <div className="grow">
                 <div className="flex items-center gap-3 mb-3">
                   <h3 className="text-2xl font-bold text-gray-900">{partner.name}</h3>
                   <ShieldCheck size={20} className="text-[#84cc16]" />
