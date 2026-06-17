@@ -223,7 +223,7 @@ function Home() {
               SPORTS-EDGE provides innovative sports surface systems which reduce
               leg, ligament and lower back strains and injuries. Based in Kolkata,
               India, we provide international standard surfaces for sports such as
-              Cricket, Football, Tennis, Batminton, Pickleball, Volleyball, Basketball, Squash and many more.
+              Cricket, Football, Tennis, Badminton, Pickleball, Volleyball, Basketball, Squash and many more.
             </p>
             <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
               We strive for superior customer satisfaction by recommending the most
