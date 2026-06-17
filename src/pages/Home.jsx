@@ -11,6 +11,8 @@ import basketballCourt from '../assets/basketball court.avif';
 import hockeyCourt from '../assets/hocky court.avif';
 import swimmingCourt from '../assets/swimming court.avif';
 import footballCourt from '../assets/football court.avif';
+import badmintonCourt from '../assets/batminton court.jpg';
+import woodenCourt from '../assets/wooden court.avif';
 
 import proj1 from '../assets/projects/Cricket_turf_baguiati.jpeg';
 import proj2 from '../assets/projects/Football_turf_baguiati.jpeg';
@@ -46,16 +48,16 @@ const sports = [
     path: '/indusive-sports/products/tennis-turf',
   },
   {
-    name: 'Basketball Court',
-    desc: 'FIBA standard indoor & outdoor courts',
-    image: basketballCourt,
-    path: '/indusive-sports/product-range',
+    name: 'Badminton Court',
+    desc: 'Professional indoor & outdoor courts',
+    image: badmintonCourt,
+    path: '/indusive-sports/products/badminton-court',
   },
   {
-    name: 'Swimming Pool',
-    desc: 'Professional pool design & construction',
-    image: swimmingCourt,
-    path: '/indusive-sports/product-range',
+    name: 'Wooden Court',
+    desc: 'Premium hardwood sports flooring',
+    image: woodenCourt,
+    path: '/indusive-sports/products/wooden-court',
   },
   {
     name: 'Multi-Sport',

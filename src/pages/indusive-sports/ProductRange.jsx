@@ -88,6 +88,14 @@ const products = [
     features: ['Premium Wood', 'Energy Return', 'Professional Grade']
   },
   {
+    title: 'Acrylic Court',
+    category: 'Acrylic Systems',
+    description: 'ITF certified acrylic surfacing for tennis, basketball, and multi-sport use, providing consistent bounce and vibrant aesthetics.',
+    path: '/indusive-sports/products/acrylic-court',
+    image: tennisCourt,
+    features: ['ITF Certified', 'UV Resistant', 'Low Maintenance']
+  },
+  {
     title: 'PP Tiles Court',
     category: 'Interlocking Tiles',
     description: 'Versatile and durable interlocking PP tiles for outdoor and indoor multi-sport courts, providing easy installation and all-weather use.',

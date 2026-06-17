@@ -14,6 +14,10 @@ import Redexim from './pages/indusive-sports/Redexim';
 import FootballTurf from './pages/indusive-sports/products/FootballTurf';
 import HockeyTurf from './pages/indusive-sports/products/HockeyTurf';
 import TennisTurf from './pages/indusive-sports/products/TennisTurf';
+import BadmintonTurf from './pages/indusive-sports/products/BadmintonTurf';
+import WoodenCourt from './pages/indusive-sports/products/WoodenCourt';
+import AcrylicCourt from './pages/indusive-sports/products/AcrylicCourt';
+import PPTilesCourt from './pages/indusive-sports/products/PPTilesCourt';
 import MultiPurposeTurf from './pages/indusive-sports/products/MultiPurposeTurf';
 import LandscapeLeisureTurf from './pages/indusive-sports/products/LandscapeLeisureTurf';
 
@@ -44,6 +48,10 @@ function App() {
         <Route path="/indusive-sports/products/football-turf" element={<FootballTurf />} />
         <Route path="/indusive-sports/products/hockey-turf" element={<HockeyTurf />} />
         <Route path="/indusive-sports/products/tennis-turf" element={<TennisTurf />} />
+        <Route path="/indusive-sports/products/badminton-court" element={<BadmintonTurf />} />
+        <Route path="/indusive-sports/products/wooden-court" element={<WoodenCourt />} />
+        <Route path="/indusive-sports/products/acrylic-court" element={<AcrylicCourt />} />
+        <Route path="/indusive-sports/products/pp-tiles-court" element={<PPTilesCourt />} />
         <Route path="/indusive-sports/products/multi-purpose-turf" element={<MultiPurposeTurf />} />
         <Route path="/indusive-sports/products/landscape-leisure-turf" element={<LandscapeLeisureTurf />} />
 
