@@ -12,8 +12,8 @@ function Hero() {
           <ShieldCheck size={16} className="text-[#84cc16]" />
           <span className="text-xs font-bold text-gray-900 tracking-wide uppercase">Eastern India's No. 1 Sports Infrastructure Company</span>
         </div>
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-6">
-          Premium <span className="text-gray-800">Sports</span><br />
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-100 tracking-tight leading-[1.1] mb-6">
+          Premium <span className="text-gray-100">Sports</span><br />
           <span className="text-[#ffffff] drop-shadow-md">Infrastructure</span>
         </h1>
         <p className="text-gray-100 font-medium text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
@@ -31,14 +31,14 @@ function Hero() {
           </Link>
         </div>
         <div className="mt-10 flex items-center justify-center lg:justify-start gap-8">
-          <div className="flex items-center gap-2 bg-white/30 backdrop-blur-md px-4 py-2 rounded-xl shadow-sm border border-white/40">
+          <div className="flex items-center gap-2 bg-white/40 backdrop-blur-md px-4 py-2 rounded-xl shadow-sm border border-white/40">
             <Award className="text-[#84cc16]" size={24} />
             <div className="text-left">
               <div className="text-xl font-black text-gray-900 leading-none">100+</div>
               <div className="text-xs text-gray-200 font-bold uppercase tracking-wider">Projects</div>
             </div>
           </div>
-          <div className="flex items-center gap-2 bg-white/30 backdrop-blur-sm px-4 py-2 rounded-xl shadow-sm border border-white/40">
+          <div className="flex items-center gap-2 bg-white/40 backdrop-blur-sm px-4 py-2 rounded-xl shadow-sm border border-white/40">
             <ShieldCheck className="text-[#84cc16]" size={24} />
             <div className="text-left">
               <div className="text-xl font-black text-gray-900 leading-none">10+</div>
@@ -50,7 +50,7 @@ function Hero() {
 
       {/* Right Column: Glassmorphic Information Card */}
       <div className="lg:col-span-5 flex justify-center lg:justify-end w-full lg:translate-x-4 xl:translate-x-8">
-        <div className="w-full max-w-[420px] bg-white/10 backdrop-blur-3xl border border-white/30 rounded-[2.5rem] p-6 md:p-8 shadow-2xl flex flex-col justify-between">
+        <div className="w-full max-w-[420px] bg-white/30 backdrop-blur-3xl border border-white/30 rounded-[2.5rem] p-6 md:p-8 shadow-2xl flex flex-col justify-between">
           <div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 leading-tight">
               Building the Future of Sports.

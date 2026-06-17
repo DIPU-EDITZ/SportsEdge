@@ -12,6 +12,16 @@ import hockeyCourt from '../assets/hocky court.avif';
 import swimmingCourt from '../assets/swimming court.avif';
 import footballCourt from '../assets/football court.avif';
 
+import proj1 from '../assets/projects/Cricket_turf_baguiati.jpeg';
+import proj2 from '../assets/projects/Football_turf_baguiati.jpeg';
+import proj3 from '../assets/projects/PP_tiles_basketball_sudhir_memorial_institute.jpeg';
+import proj4 from '../assets/projects/Play_turf_khidirpur.jpeg';
+import proj5 from '../assets/projects/Rooftop_pickleball_court_prayagraj.jpeg';
+import proj6 from '../assets/projects/multisports_turf_srirampur.jpeg';
+import proj7 from '../assets/projects/pickleball&badminton_court_srirampur.jpeg';
+
+const carouselImages = [proj1, proj2, proj3, proj4, proj5, proj6, proj7];
+
 /* ═══════════════════════════════════════════
    DATA
    ═══════════════════════════════════════════ */
@@ -187,15 +197,33 @@ function Home() {
   const [partnersRef, partnersVisible] = useScrollReveal();
   const [ctaRef, ctaVisible] = useScrollReveal(0.2);
 
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="flex flex-col bg-white text-gray-900 font-sans">
 
       {/* ─────────────────────────────────────
           SECTION 1 — HERO
           ───────────────────────────────────── */}
-      <div className="relative w-full bg-[url('/backgroundImage.webp')] bg-cover bg-center bg-no-repeat">
+      <div className="relative w-full overflow-hidden bg-[#08060d]">
+        {carouselImages.map((img, idx) => (
+          <div
+            key={idx}
+            className={`absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
+              idx === currentSlide ? 'opacity-100 z-0' : 'opacity-0 -z-10'
+            }`}
+            style={{ backgroundImage: `url(${img})` }}
+          />
+        ))}
         {/* Light overlay to fade the background image for readability */}
-        <div className="absolute inset-0 bg-black/15 pointer-events-none" />
+        <div className="absolute inset-0 bg-black/20 pointer-events-none z-0" />
         <div className="relative z-10">
           <Hero />
         </div>
