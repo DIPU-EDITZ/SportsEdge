@@ -217,7 +217,7 @@ export default async function handler(req, res) {
     `;
 
     const { error: adminError } = await resend.emails.send({
-      from: "SportsEdge Enquiries <contact@energenix.store>",
+      from: "SportsEdge Enquiries <contact@sportsedge.net.in>",
       to: ["anantahazra.bdn@gmail.com"],
       replyTo: cleanEmail,
       subject: cleanInterest
@@ -296,7 +296,7 @@ export default async function handler(req, res) {
     `;
 
     const { error: customerError } = await resend.emails.send({
-      from: "SportsEdge <contact@energenix.store>",
+      from: "SportsEdge Support  <support@sportsedge.net.in>",
       to: [cleanEmail],
       subject: "We've Received Your Enquiry",
       html: emailShell({
