@@ -11,7 +11,7 @@ import {
     Droplets,
 } from "lucide-react";
 import Footer from "../../../components/Footer";
-import badmintonCourtImg from "../../../assets/acrylic court.avif";
+import badmintonCourtImg from "../../../assets/badminton court.jpg";
 
 // Use same hook as Home for appearing animations
 function useScrollReveal(threshold = 0.15) {

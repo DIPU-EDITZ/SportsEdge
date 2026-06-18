@@ -8,7 +8,7 @@ import tennisCourt from "../../assets/tennis court.avif";
 import basketballCourt from "../../assets/basketball court.avif";
 import runningTracks from "../../assets/running tracks.avif";
 import swimmingCourt from "../../assets/swimming court.avif";
-import badmintonCourt from "../../assets/acrylic court.avif";
+import badmintonCourt from "../../assets/badminton court.jpg";
 import woodenCourt from "../../assets/wooden court.avif";
 import ppTilesCourt from "../../assets/projects/PP_tiles_basketball_sudhir_memorial_institute.jpeg";
 import cricketTurf from "../../assets/projects/Cricket_turf_baguiati.jpeg";

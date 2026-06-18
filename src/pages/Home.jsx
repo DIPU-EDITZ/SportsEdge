@@ -9,8 +9,9 @@ import footballTurf from "../assets/football court.avif";
 import tennisCourt from "../assets/tennis court.avif";
 import hockeyCourt from "../assets/hocky court.avif";
 import footballCourt from "../assets/projects/Cricket_turf_baguiati.jpeg";
-import badmintonCourt from "../assets/acrylic court.avif";
+import badmintonCourt from "../assets/badminton court.jpg";
 import woodenCourt from "../assets/wooden court.avif";
+import multipurposeCourt from "../assets/projects/multisports_turf_srirampur.jpeg";
 
 import proj1 from "../assets/projects/Cricket_turf_baguiati.jpeg";
 import proj2 from "../assets/projects/Football_turf_baguiati.jpeg";
@@ -59,7 +60,7 @@ const sports = [
     {
         name: "Multi-Sport",
         desc: "Versatile multi-purpose playing fields",
-        image: footballCourt,
+        image: multipurposeCourt,
         path: "/products/multi-purpose-turf",
     },
 ];
