@@ -122,7 +122,18 @@ function badge(text) {
   `;
 }
 
+function setSecurityHeaders(res) {
+  res.setHeader('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload');
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('X-XSS-Protection', '1; mode=block');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), interest-cohort=()');
+  res.setHeader('Expect-CT', 'max-age=86400, enforce');
+}
+
 export default async function handler(req, res) {
+  setSecurityHeaders(res);
   if (req.method !== "POST") {
     return res.status(405).json({
       success: false,

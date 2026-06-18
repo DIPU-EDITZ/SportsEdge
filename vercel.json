@@ -5,7 +5,15 @@
       "headers": [
         {
           "key": "Strict-Transport-Security",
-          "value": "max-age=63072000; includeSubdomains; preload"
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Expect-CT",
+          "value": "max-age=86400, enforce"
         },
         {
           "key": "Content-Security-Policy",

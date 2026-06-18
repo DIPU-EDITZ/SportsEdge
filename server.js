@@ -11,6 +11,15 @@ const port = process.env.PORT || 3001;
 app.set('trust proxy', 1);
 
 // Middleware
+
+// Force HTTPS in production
+app.use((req, res, next) => {
+  if (req.headers['x-forwarded-proto'] !== 'https' && process.env.NODE_ENV === 'production') {
+    return res.redirect(`https://${req.headers.host}${req.url}`);
+  }
+  next();
+});
+
 app.use(helmet({
   contentSecurityPolicy: {
     directives: {
@@ -30,8 +39,11 @@ app.use(helmet({
     preload: true,
   },
 }));
+
 app.use((req, res, next) => {
   res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), interest-cohort=()');
+  res.setHeader('X-XSS-Protection', '1; mode=block');
+  res.setHeader('Expect-CT', 'max-age=86400, enforce');
   next();
 });
 app.use(cors());
