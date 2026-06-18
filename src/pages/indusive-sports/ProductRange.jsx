@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Activity, Circle, Droplets } from "lucide-react";
+import { ArrowRight, Circle } from "lucide-react";
 import Footer from "../../components/Footer";
 
 import footballTurf from "../../assets/football court.avif";

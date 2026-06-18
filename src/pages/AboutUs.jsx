@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { CheckCircle2, Factory, Globe, ShieldCheck, MapPin, Award, Users } from 'lucide-react';
+import { Factory, Globe, ShieldCheck, Award, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 

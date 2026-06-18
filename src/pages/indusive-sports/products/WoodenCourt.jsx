@@ -2,8 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import {
     ArrowLeft,
-    ArrowRight,
-    CheckCircle2,
     Factory,
     Globe,
     Award,

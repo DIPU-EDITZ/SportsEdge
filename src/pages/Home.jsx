@@ -7,9 +7,7 @@ import Footer from "../components/Footer";
 // Asset imports
 import footballTurf from "../assets/football turf.avif";
 import tennisCourt from "../assets/tennis court.avif";
-import basketballCourt from "../assets/basketball court.avif";
 import hockeyCourt from "../assets/hocky court.avif";
-import swimmingCourt from "../assets/swimming court.avif";
 import footballCourt from "../assets/football court.avif";
 import badmintonCourt from "../assets/batminton court.jpg";
 import woodenCourt from "../assets/wooden court.avif";
