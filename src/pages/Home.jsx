@@ -230,7 +230,7 @@ function Home() {
                         }`}
                     >
                         <img 
-                            src={img} 
+                            src={idx === 0 ? "/hero-1.jpg" : img} 
                             alt="" 
                             className="w-full h-full object-cover"
                             loading={idx === 0 ? "eager" : "lazy"}

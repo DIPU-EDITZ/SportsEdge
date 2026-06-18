@@ -53,30 +53,32 @@ function Navbar() {
             <div className="flex items-center gap-4 lg:hidden">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="relative z-50 w-6 h-5 flex flex-col justify-between items-center group focus:outline-none"
+                    className="relative z-50 p-4 -ml-4 flex flex-col justify-between items-center group focus:outline-none"
                     aria-label="Toggle menu"
                 >
-                    <span
-                        className={`w-6 h-[2.5px] rounded-full transition-all duration-300 origin-left transform ${
-                            isOpen
-                                ? "rotate-45 translate-x-[3px] -translate-y-[1px] bg-[#bef264]"
-                                : "bg-white group-hover:bg-[#bef264]"
-                        }`}
-                    />
-                    <span
-                        className={`w-6 h-[2.5px] rounded-full transition-all duration-300 ${
-                            isOpen
-                                ? "opacity-0 -translate-x-2"
-                                : "bg-white group-hover:bg-[#bef264]"
-                        }`}
-                    />
-                    <span
-                        className={`w-6 h-[2.5px] rounded-full transition-all duration-300 origin-left transform ${
-                            isOpen
-                                ? "-rotate-45 translate-x-[3px] translate-y-[1px] bg-[#bef264]"
-                                : "bg-white group-hover:bg-[#bef264]"
-                        }`}
-                    />
+                    <div className="w-6 h-5 flex flex-col justify-between">
+                        <span
+                            className={`w-6 h-[2.5px] rounded-full transition-all duration-300 origin-left transform ${
+                                isOpen
+                                    ? "rotate-45 translate-x-[3px] -translate-y-[1px] bg-[#bef264]"
+                                    : "bg-white group-hover:bg-[#bef264]"
+                            }`}
+                        />
+                        <span
+                            className={`w-6 h-[2.5px] rounded-full transition-all duration-300 ${
+                                isOpen
+                                    ? "opacity-0 -translate-x-2"
+                                    : "bg-white group-hover:bg-[#bef264]"
+                            }`}
+                        />
+                        <span
+                            className={`w-6 h-[2.5px] rounded-full transition-all duration-300 origin-left transform ${
+                                isOpen
+                                    ? "-rotate-45 translate-x-[3px] translate-y-[1px] bg-[#bef264]"
+                                    : "bg-white group-hover:bg-[#bef264]"
+                            }`}
+                        />
+                    </div>
                 </button>
                 <Link to="/" className="flex flex-col">
                     <span className="text-white text-2xl font-bold tracking-tight leading-none">
