@@ -4,15 +4,13 @@ import { ArrowRight, Circle } from "lucide-react";
 import Footer from "../../components/Footer";
 
 import footballTurf from "../../assets/football court.avif";
-import hockeyCourt from "../../assets/hocky court.avif";
 import tennisCourt from "../../assets/tennis court.avif";
 import basketballCourt from "../../assets/basketball court.avif";
 import runningTracks from "../../assets/running tracks.avif";
-import multipurposeCourt from "../../assets/multipurpose court.avif";
 import swimmingCourt from "../../assets/swimming court.avif";
 import badmintonCourt from "../../assets/acrylic court.avif";
 import woodenCourt from "../../assets/wooden court.avif";
-import ppTilesCourt from "../../assets/PP tiles court.avif";
+import ppTilesCourt from "../../assets/projects/PP_tiles_basketball_sudhir_memorial_institute.jpeg";
 import cricketTurf from "../../assets/projects/Cricket_turf_baguiati.jpeg";
 
 const products = [
@@ -33,15 +31,6 @@ const products = [
         path: "/products/football-turf",
         image: footballTurf,
         features: ["UV Resistant", "High Durability", "Shock Absorption"],
-    },
-    {
-        title: "Hockey Turf",
-        category: "Synthetic Turf",
-        description:
-            "FIH approved artificial hockey surfaces delivering consistent ball roll, excellent grip, and minimal water requirement.",
-        path: "/products/hockey-turf",
-        image: hockeyCourt,
-        features: ["Fast Ball Roll", "Non-Abrasive", "All-Weather Play"],
     },
     {
         title: "Tennis Court",
@@ -83,19 +72,7 @@ const products = [
             "Leak Proof Structure",
         ],
     },
-    {
-        title: "Multi-Purpose Courts",
-        category: "Versatile Solutions",
-        description:
-            "Versatile playing fields that combine multiple sports in one area, perfect for schools and residential complexes.",
-        path: "/products/multi-purpose-turf",
-        image: multipurposeCourt,
-        features: [
-            "Space Saving",
-            "Multi-Sport Line Marking",
-            "Cost Effective",
-        ],
-    },
+
     {
         title: "Badminton Court",
         category: "Indoor & Outdoor Systems",
