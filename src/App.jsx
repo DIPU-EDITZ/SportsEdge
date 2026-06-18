@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import AboutUs from "./pages/AboutUs";
 
 // Indusive Sports sub-pages
 import OurPartners from './pages/indusive-sports/OurPartners';
@@ -12,7 +13,6 @@ import Redexim from './pages/indusive-sports/Redexim';
 
 // Indusive Sports > Our Products
 import FootballTurf from './pages/indusive-sports/products/FootballTurf';
-import HockeyTurf from './pages/indusive-sports/products/HockeyTurf';
 import TennisTurf from './pages/indusive-sports/products/TennisTurf';
 import BadmintonTurf from './pages/indusive-sports/products/BadmintonTurf';
 import WoodenCourt from './pages/indusive-sports/products/WoodenCourt';
@@ -40,6 +40,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/about" element={<AboutUs />} />
 
                 {/* Indusive Sports */}
                 <Route path="/our-partners" element={<OurPartners />} />
@@ -52,7 +53,6 @@ function App() {
                     path="/products/football-turf"
                     element={<FootballTurf />}
                 />
-                <Route path="/products/hockey-turf" element={<HockeyTurf />} />
                 <Route path="/products/tennis-turf" element={<TennisTurf />} />
                 <Route
                     path="/products/badminton-court"

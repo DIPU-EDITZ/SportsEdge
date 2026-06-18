@@ -3,6 +3,9 @@ import { Factory, Globe, ShieldCheck, Award, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 
+import football from "../assets/football court.avif";
+import cricket from "../assets/projects/Cricket_turf_baguiati.jpeg";
+
 function AboutUs() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -64,10 +67,10 @@ function AboutUs() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-gray-100 rounded-2xl aspect-[4/5] overflow-hidden">
-               <img src="/assets/football court.avif" alt="Football Court" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+               <img src={football} alt="Football Court" className="w-full h-full object-cover transition-all duration-500" />
             </div>
             <div className="bg-gray-100 rounded-2xl aspect-[4/5] overflow-hidden mt-8">
-               <img src="/assets/tennis court.avif" alt="Tennis Court" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+               <img src={cricket} alt="Cricket Court" className="w-full h-full object-cover transition-all duration-500" />
             </div>
           </div>
         </div>
