@@ -151,9 +151,9 @@ function OurProjects() {
                     </div>
                   </div>
 
-                  <h3 className="text-2xl md:text-3xl font-black text-gray-900 mb-4 group-hover:text-[#84cc16] transition-colors duration-300">
+                  <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-4 group-hover:text-[#84cc16] transition-colors duration-300">
                     {project.title}
-                  </h3>
+                  </h2>
                   
                   <div className="flex items-center gap-2 mb-6">
                     <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center">

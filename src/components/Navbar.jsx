@@ -128,6 +128,8 @@ function Navbar() {
                     onMouseLeave={handleProductsLeave}
                 >
                     <button
+                        aria-haspopup="true"
+                        aria-expanded={productsDropdownOpen}
                         className={`flex items-center gap-1 text-sm font-medium transition-colors duration-200 hover:text-white ${
                             productsDropdownOpen
                                 ? "text-white font-semibold"

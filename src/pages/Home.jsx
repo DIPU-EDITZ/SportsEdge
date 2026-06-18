@@ -218,17 +218,25 @@ function Home() {
             {/* ─────────────────────────────────────
           SECTION 1 — HERO
           ───────────────────────────────────── */}
-            <div className="relative w-full overflow-hidden bg-[#08060d]">
+            <div className="relative w-full overflow-hidden bg-[#08060d] h-[600px] md:h-[700px] lg:h-[800px]">
                 {carouselImages.map((img, idx) => (
                     <div
                         key={idx}
-                        className={`absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
+                        aria-hidden={idx !== currentSlide}
+                        className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
                             idx === currentSlide
                                 ? "opacity-100 z-0"
                                 : "opacity-0 -z-10"
                         }`}
-                        style={{ backgroundImage: `url(${img})` }}
-                    />
+                    >
+                        <img 
+                            src={img} 
+                            alt="" 
+                            className="w-full h-full object-cover"
+                            loading={idx === 0 ? "eager" : "lazy"}
+                            {...(idx === 0 ? { fetchPriority: "high" } : {})}
+                        />
+                    </div>
                 ))}
                 {/* Light overlay to fade the background image for readability */}
                 <div className="absolute inset-0 bg-black/20 pointer-events-none z-0" />

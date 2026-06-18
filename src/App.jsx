@@ -35,9 +35,10 @@ function App() {
             </div>
 
             {/* Page Routing */}
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/contact" element={<Contact />} />
+            <main>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/contact" element={<Contact />} />
 
                 {/* Indusive Sports */}
                 <Route path="/our-partners" element={<OurPartners />} />
@@ -82,6 +83,7 @@ function App() {
                 <Route path="/our-clients" element={<OurClients />} />
                 <Route path="/our-projects" element={<OurProjects />} />
             </Routes>
+            </main>
         </div>
     );
 }
