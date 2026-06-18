@@ -89,7 +89,7 @@ function OurProjects() {
           ───────────────────────────────────── */}
       <section className="bg-[#08060d] pt-32 pb-16 md:pt-40 md:pb-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-10">
-            <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#bef264] via-transparent to-transparent"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))]] from-[#bef264] via-transparent to-transparent"></div>
         </div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <span className="text-[#84cc16] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">Our Portfolio</span>
@@ -97,22 +97,6 @@ function OurProjects() {
           <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
             Explore our signature projects across India. We take pride in delivering excellence through innovative design and flawless execution.
           </p>
-        </div>
-      </section>
-
-      {/* ─────────────────────────────────────
-          PROJECT FILTER (Static for now)
-          ───────────────────────────────────── */}
-      <section className="py-8 px-6 bg-gray-50 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-4">
-            {['All Projects', 'Football', 'Cricket', 'Basketball', 'Racket Sports', 'Multi-Sport'].map((cat) => (
-                <button 
-                    key={cat}
-                    className={`px-6 py-2 rounded-full text-sm font-bold transition-all duration-200 ${cat === 'All Projects' ? 'bg-[#84cc16] text-gray-900' : 'bg-white text-gray-600 border border-gray-200 hover:border-[#84cc16]/50'}`}
-                >
-                    {cat}
-                </button>
-            ))}
         </div>
       </section>
 
@@ -139,7 +123,7 @@ function OurProjects() {
                 </div>
 
                 {/* Content */}
-                <div className="p-8 md:p-10 flex flex-col flex-grow">
+                <div className="p-8 md:p-10 flex flex-col grow">
                   <div className="flex flex-wrap items-center gap-4 text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">
                     <div className="flex items-center gap-1.5">
                       <MapPin size={14} className="text-[#84cc16]" />
@@ -162,7 +146,7 @@ function OurProjects() {
                     <span className="text-sm font-bold text-gray-500 italic">Project for {project.client}</span>
                   </div>
 
-                  <p className="text-gray-600 leading-relaxed mb-8 flex-grow">
+                  <p className="text-gray-600 leading-relaxed mb-8 grow">
                     {project.description}
                   </p>
 

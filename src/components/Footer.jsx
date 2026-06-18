@@ -5,8 +5,6 @@ import { MapPin, Phone, Mail } from "lucide-react";
 function Footer() {
     const quickLinks = [
         { name: "Home", path: "/" },
-        { name: "Product Range", path: "/product-range" },
-        { name: "Our Partners", path: "/our-partners" },
         { name: "Our Projects", path: "/our-projects" },
         { name: "Our Clients", path: "/our-clients" },
         { name: "Contact Us", path: "/contact" },
@@ -15,21 +13,19 @@ function Footer() {
     const products = [
         { name: "Football Turf", path: "/products/football-turf" },
         { name: "Hockey Turf", path: "/products/hockey-turf" },
-        { name: "Tennis Turf", path: "/products/tennis-turf" },
-        { name: "Multi-Purpose Turf", path: "/products/multi-purpose-turf" },
-        {
-            name: "Landscape & Leisure",
-            path: "/products/landscape-leisure-turf",
-        },
+        { name: "Badminton Court", path: "/products/badminton-court" },
+        { name: "Wooden Court", path: "/products/wooden-court" },
+        { name: "Acrylic Court", path: "/products/acrylic-court" },
+        { name: "PP Tiles Court", path: "/products/pp-tiles-court" },
     ];
 
     return (
         <footer className="bg-[#060509] border-t border-white/5">
             {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-16 md:py-20">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
                     {/* Company Info */}
-                    <div className="lg:col-span-1">
+                     <div className="col-span-2 lg:col-span-1">
                         <Link
                             to="/"
                             className="text-white text-2xl font-bold tracking-tight"
@@ -52,7 +48,7 @@ function Footer() {
                     </div>
 
                     {/* Quick Links */}
-                    <div>
+                    <div className="col-span-1">
                         <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">
                             Quick Links
                         </h4>
@@ -71,7 +67,7 @@ function Footer() {
                     </div>
 
                     {/* Products */}
-                    <div>
+                    <div className="col-span-1">
                         <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">
                             Products
                         </h4>
@@ -90,7 +86,7 @@ function Footer() {
                     </div>
 
                     {/* Contact */}
-                    <div>
+                    <div className="col-span-2 lg:col-span-1">
                         <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">
                             Contact Us
                         </h4>
@@ -150,8 +146,12 @@ function Footer() {
                         © {new Date().getFullYear()} SportsEdge. All rights
                         reserved.
                     </p>
-                    <p className="text-white/30 text-xs">
-                        Building World-Class Sports Infrastructure
+                    <p className="text-white/30 text-xs pb-9">
+                        Build with <Link to="https://dorium.vercel.app/" target="blank">
+                                <span className="text-[#bef264] hover:text-white">
+                                    Dorium
+                                </span>
+                            </Link>
                     </p>
                 </div>
             </div>

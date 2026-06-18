@@ -53,7 +53,7 @@ function Navbar() {
             <div className="flex items-center gap-4 lg:hidden">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="relative z-50 p-4 -ml-4 flex flex-col justify-between items-center group focus:outline-none"
+                    className="relative z-50 p-4 pr-2 -ml-4 flex flex-col justify-between items-center group focus:outline-none"
                     aria-label="Toggle menu"
                 >
                     <div className="w-6 h-5 flex flex-col justify-between">
