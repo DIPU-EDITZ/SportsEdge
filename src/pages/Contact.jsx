@@ -218,9 +218,13 @@ function Contact() {
                     className="w-full bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-xl focus:ring-[#84cc16] focus:border-[#84cc16] block p-3.5 outline-none transition-colors"
                   >
                     <option value="Football Turf">Football Turf</option>
-                    <option value="Tennis Court">Tennis Court</option>
+                    <option value="Cricket Turf">Cricket Turf</option>
+                    <option value="Tennis Turf">Tennis Turf</option>
+                    <option value="Badminton Court">Badminton Court</option>
+                    <option value="Wooden Court">Wooden Court</option>
+                    <option value="Acrylic Court">Acrylic Court</option>
+                    <option value="PP Tiles Court">PP Tiles Court</option>
                     <option value="Basketball Court">Basketball Court</option>
-                    <option value="Multi-Purpose Facility">Multi-Purpose Facility</option>
                     <option value="Other">Other</option>
                   </select>
                 </div>
