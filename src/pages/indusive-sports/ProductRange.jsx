@@ -55,7 +55,7 @@ const products = [
         category: "EPDM Track Systems",
         description:
             "World Athletics (IAAF) certified running tracks for professional stadiums, schools, and training facilities.",
-        path: "/product-range",
+        path: "/products/running-track",
         image: runningTracks,
         features: ["Spike Resistant", "Energy Return", "Weather Proof"],
     },
@@ -64,7 +64,7 @@ const products = [
         category: "Aquatic Systems",
         description:
             "Professional swimming pool design, construction, filtration, and upkeep services matching international safety guidelines.",
-        path: "/product-range",
+        path: "/products/swimming-pool",
         image: swimmingCourt,
         features: [
             "Premium Filtration",

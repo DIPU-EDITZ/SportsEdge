@@ -21,6 +21,8 @@ import PPTilesCourt from './pages/indusive-sports/products/PPTilesCourt';
 import MultiPurposeTurf from './pages/indusive-sports/products/MultiPurposeTurf';
 import LandscapeLeisureTurf from './pages/indusive-sports/products/LandscapeLeisureTurf';
 import CricketTurf from './pages/indusive-sports/products/CricketTurf';
+import RunningTrack from './pages/indusive-sports/products/RunningTrack';
+import SwimmingPool from './pages/indusive-sports/products/SwimmingPool';
 
 // Top-level pages
 import Testimonials from './pages/Testimonials';
@@ -81,6 +83,14 @@ function App() {
                 <Route
                     path="/products/cricket-turf"
                     element={<CricketTurf />}
+                />
+                <Route
+                    path="/products/running-track"
+                    element={<RunningTrack />}
+                />
+                <Route
+                    path="/products/swimming-pool"
+                    element={<SwimmingPool />}
                 />
 
                 {/* Main pages */}
