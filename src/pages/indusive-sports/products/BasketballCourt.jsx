@@ -235,7 +235,7 @@ export default function BasketballCourt() {
                                     className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-[#84cc16] transition-all"
                                 >
                                     <div className="flex items-center gap-3 mb-4">
-                                        <span className="w-8 h-8 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-900 font-black text-sm flex-shrink-0">
+                                        <span className="w-8 h-8 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-gray-900 font-black text-sm shrink-0">
                                             {i + 1}
                                         </span>
                                         <div>

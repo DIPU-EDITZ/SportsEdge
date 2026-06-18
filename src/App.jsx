@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
@@ -32,6 +33,7 @@ import OurProjects from './pages/OurProjects';
 function App() {
     return (
         <div className="relative min-h-screen bg-white text-gray-900 font-sans overflow-x-hidden antialiased">
+            <ScrollToTop />
             {/* Global Navigation Bar */}
             <div className="absolute top-0 left-0 right-0 z-50">
                 <Navbar />
