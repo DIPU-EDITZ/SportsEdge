@@ -26,7 +26,7 @@ function AboutUs() {
             <span className="text-[#84cc16]">Sports Infrastructure</span>
           </h1>
           <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Based in Kolkata, SPORTS-EDGE is an ISO certified enterprise specializing in the design, development, and maintenance of world-class sports facilities across India.
+            Based in Kolkata, SPORTS-EDGE is an industry leading enterprise specializing in the design, development, and maintenance of world-class sports facilities across India.
           </p>
         </div>
       </section>
@@ -51,7 +51,7 @@ function AboutUs() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Quality Assured</h4>
-                  <p className="text-sm text-gray-500">ISO, FIFA, FIH, ITF certified materials.</p>
+                  <p className="text-sm text-gray-500">FIFA, FIH, ITF, FIBA certified materials.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -91,7 +91,7 @@ function AboutUs() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { icon: Globe, title: 'Pan India Presence', desc: 'Serving clients across 20+ cities with rapid deployment capabilities.' },
-              { icon: Factory, title: 'Premium Partners', desc: 'Collaborating with global brands like Indusive Sports, Redexim, and Trocellen.' },
+              { icon: Factory, title: 'Premium Partners', desc: 'Collaborating with global brands like Bellin Turf, EPU Floor, Stihl India, and Pace Court.' },
               { icon: Users, title: 'Expert Team', desc: '50+ experienced engineers and installation specialists.' },
             ].map((feature, idx) => (
               <div key={idx} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
