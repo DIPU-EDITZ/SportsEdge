@@ -27,6 +27,12 @@ import proj7 from "../assets/projects/pickleball&badminton_court_srirampur.jpeg"
 
 const sports = [
     {
+        name: "Cricket Turf",
+        desc: "Professional-grade synthetic cricket pitches",
+        image: proj1,
+        path: "/products/cricket-turf",
+    },
+    {
         name: "Football Turf",
         desc: "FIFA certified synthetic turf systems",
         image: footballTurf,

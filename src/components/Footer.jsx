@@ -13,6 +13,8 @@ function Footer() {
     const products = [
         { name: "Football Turf", path: "/products/football-turf" },
         { name: "Hockey Turf", path: "/products/hockey-turf" },
+        { name: "Tennis Turf", path: "/products/tennis-turf" },
+        { name: "Cricket Turf", path: "/products/cricket-turf" },
         { name: "Badminton Court", path: "/products/badminton-court" },
         { name: "Wooden Court", path: "/products/wooden-court" },
         { name: "Acrylic Court", path: "/products/acrylic-court" },

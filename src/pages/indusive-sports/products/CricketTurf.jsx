@@ -11,7 +11,7 @@ import {
     Droplets,
 } from "lucide-react";
 import Footer from "../../../components/Footer";
-import tennisCourtImg from "../../../assets/tennis court.avif";
+import cricketTurfImg from "../../../assets/projects/Cricket_turf_baguiati.jpeg";
 
 // Use same hook as Home for appearing animations
 function useScrollReveal(threshold = 0.15) {
@@ -48,80 +48,80 @@ function SectionLabel({ children }) {
 const stats = [
     {
         icon: Factory,
-        number: "250+",
-        label: "Courts Built",
-        sub: "Professional & Private",
+        number: "50+",
+        label: "Pitches Installed",
+        sub: "Schools & Academies",
     },
-    { icon: Globe, number: "ITF", label: "Classified", sub: "Global standards" },
+    { icon: Globe, number: "All-Year", label: "Playability", sub: "Rain or shine" },
     {
         icon: ShieldCheck,
-        number: "8-Layer",
-        label: "Cushioning",
-        sub: "Joint protection",
+        number: "High",
+        label: "Density",
+        sub: "Fiber technology",
     },
     {
         icon: Award,
-        number: "10yr",
-        label: "Warranty",
-        sub: "UV stable pigments",
+        number: "#1",
+        label: "Choice",
+        sub: "For practice nets",
     },
 ];
 
 const layers = [
     {
-        title: "Top Color Coat",
-        subtitle: "UV-resistant acrylic · Brilliant finish",
+        title: "Cricket Grass",
+        subtitle: "High-density polyethylene · UV stable",
         description:
-            "Highly durable finish coat providing the final aesthetic and specific texture for the desired ball pace (Slow, Medium, or Fast).",
+            "Specially designed vertical fibers that mimic the behavior of a well-maintained natural pitch, providing consistent ball pace and spin response.",
     },
     {
-        title: "Texture Layer",
-        subtitle: "Acrylic filler · Consistent bounce",
+        title: "Infill System",
+        subtitle: "Silica sand · Stability",
         description:
-            "Specialized acrylic filler layers that provide the necessary friction and grip for players while ensuring a perfectly true ball bounce.",
+            "A specialized sand infill that supports the fibers and provides the necessary firmness for a true ball bounce and player footing.",
     },
     {
-        title: "Cushion Layers",
-        subtitle: "Liquid rubber cushion · Impact absorption",
+        title: "Shock Pad",
+        subtitle: "Optional layer · Impact protection",
         description:
-            "Multiple layers of liquid-applied rubber particles that provide elite-level shock absorption, significantly reducing stress on players' joints.",
+            "An optional underlay that provides additional shock absorption, reducing the risk of injury for fast bowlers and fielders.",
     },
     {
-        title: "Base Preparation",
-        subtitle: "Primer & Resurfacer · Foundation",
+        title: "Dynamic Base",
+        subtitle: "Crushed stone · Drainage",
         description:
-            "Crucial base layers that seal the asphalt or concrete substrate and provide a perfectly level surface for the performance layers.",
+            "A foundational layer of compacted stone that ensures a perfectly level playing surface and superior drainage during monsoon seasons.",
     },
 ];
 
 const metrics = [
     {
-        label: "ITF Pace",
-        value: "Category 1-5",
-        desc: "Customizable speed from slow to fast play.",
+        label: "Ball Bounce",
+        value: "True & Consistent",
+        desc: "Predictable bounce for both pace and spin.",
         icon: ArrowRight,
     },
     {
-        label: "Shock Absorption",
-        value: "35-50%",
-        desc: "Advanced cushioning reduces athlete fatigue.",
-        icon: ShieldCheck,
-    },
-    {
-        label: "Friction",
-        value: "Standardized",
-        desc: "Perfect balance of grip and player movement.",
-        icon: Activity,
+        label: "UV Resistance",
+        value: "Elite Level",
+        desc: "Designed to withstand intense Indian summers.",
+        icon: Droplets,
     },
     {
         label: "Durability",
-        value: "All-Weather",
-        desc: "Resistant to UV degradation and extreme rain.",
-        icon: Droplets,
+        value: "10-15 Years",
+        desc: "Long-lasting fibers for heavy daily usage.",
+        icon: ShieldCheck,
+    },
+    {
+        label: "Maintenance",
+        value: "Ultra-Low",
+        desc: "No mowing or watering required.",
+        icon: Activity,
     },
 ];
 
-export default function TennisTurf() {
+export default function CricketTurf() {
     const [heroRef, heroVisible] = useScrollReveal();
     const [statsRef, statsVisible] = useScrollReveal();
     const [layersRef, layersVisible] = useScrollReveal();
@@ -149,20 +149,19 @@ export default function TennisTurf() {
                             Back to Products
                         </Link>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
-                            Tennis Court Systems
+                            Cricket Turf Systems
                         </h1>
                         <p className="text-gray-600 text-lg md:text-xl mb-8 leading-relaxed">
-                            Professional ITF-certified acrylic and synthetic
-                            surfaces designed for elite performance, player
-                            comfort, and exceptional durability in all weather
-                            conditions.
+                            Professional-grade synthetic cricket pitches and
+                            practice nets designed for consistent performance,
+                            realistic ball behavior, and year-round playability.
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <span className="bg-[#84cc16]/10 text-[#84cc16] font-bold px-4 py-2 rounded-full text-sm">
-                                ITF Classified
+                                High-Density Fibers
                             </span>
                             <span className="bg-gray-100 text-gray-700 font-bold px-4 py-2 rounded-full text-sm">
-                                Cushioned Performance
+                                All-Weather Practice
                             </span>
                         </div>
                     </div>
@@ -170,8 +169,8 @@ export default function TennisTurf() {
                     {/* Image */}
                     <div className="relative rounded-4xl overflow-hidden aspect-4/3 shadow-xl border border-gray-100 group">
                         <img
-                            src={tennisCourtImg}
-                            alt="Tennis Court System"
+                            src={cricketTurfImg}
+                            alt="Cricket Turf System"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-linear-to-t from-gray-900/10 to-transparent pointer-events-none" />
@@ -220,14 +219,14 @@ export default function TennisTurf() {
                     className={`max-w-7xl mx-auto transition-all duration-700 ease-out ${layersVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                 >
                     <div className="text-center mb-16">
-                        <SectionLabel>System Architecture</SectionLabel>
+                        <SectionLabel>Pitch Engineering</SectionLabel>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
-                            Precision Engineering
+                            Layered for Performance
                         </h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Our tennis court systems are meticulously layered to
-                            ensure a perfectly level surface with the exact ball
-                            speed and player comfort required by the ITF.
+                            Our cricket pitches are engineered to provide the
+                            best possible balance between ball speed, bounce,
+                            and spin, ensuring a realistic practice environment.
                         </p>
                     </div>
 
@@ -261,16 +260,16 @@ export default function TennisTurf() {
 
                         <div className="lg:col-span-5 bg-gray-50 border border-gray-200 rounded-4xl p-8 md:p-12 shadow-inner group flex items-center justify-center">
                             <div className="text-center">
-                                <Activity
+                                <Award
                                     size={48}
                                     className="text-[#84cc16] mx-auto mb-4"
                                 />
                                 <h3 className="text-xl font-bold mb-2">
-                                    ITF Classified
+                                    Pro-Grade Practice
                                 </h3>
                                 <p className="text-gray-500 text-sm">
-                                    Certified for professional tournaments and
-                                    elite club use.
+                                    Trusted by top academies and schools for
+                                    uninterrupted training.
                                 </p>
                             </div>
                         </div>
@@ -285,7 +284,7 @@ export default function TennisTurf() {
                     className={`max-w-7xl mx-auto transition-all duration-700 ease-out ${metricsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                 >
                     <div className="text-center mb-16">
-                        <SectionLabel>Professional Specs</SectionLabel>
+                        <SectionLabel>Technical Specs</SectionLabel>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
                             Performance Metrics
                         </h2>
