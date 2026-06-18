@@ -211,7 +211,7 @@ function Home() {
             <div className="relative w-full overflow-hidden bg-[#08060d] h-auto lg:h-200">
                 <div className="absolute inset-0 w-full h-full z-0">
                     <img 
-                        src="/background.avif" 
+                        src="/background.png" 
                         alt="Background" 
                         className="w-full h-full object-cover"
                         loading="eager"
