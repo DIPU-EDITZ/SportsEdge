@@ -20,7 +20,6 @@ import proj5 from "../assets/projects/Rooftop_pickleball_court_prayagraj.jpeg";
 import proj6 from "../assets/projects/multisports_turf_srirampur.jpeg";
 import proj7 from "../assets/projects/pickleball&badminton_court_srirampur.jpeg";
 
-const carouselImages = [proj1, proj2, proj3, proj4, proj5, proj6, proj7];
 
 /* ═══════════════════════════════════════════
    DATA
@@ -202,14 +201,7 @@ function Home() {
     const [partnersRef, partnersVisible] = useScrollReveal();
     const [ctaRef, ctaVisible] = useScrollReveal(0.2);
 
-    const [currentSlide, setCurrentSlide] = useState(0);
 
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
-        }, 3000);
-        return () => clearInterval(timer);
-    }, []);
 
     return (
         <div className="flex flex-col bg-white text-gray-900 font-sans">
@@ -217,27 +209,17 @@ function Home() {
           SECTION 1 — HERO
           ───────────────────────────────────── */}
             <div className="relative w-full overflow-hidden bg-[#08060d] h-auto lg:h-200">
-                {carouselImages.map((img, idx) => (
-                    <div
-                        key={idx}
-                        aria-hidden={idx !== currentSlide}
-                        className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
-                            idx === currentSlide
-                                ? "opacity-100 z-0"
-                                : "opacity-0 -z-10"
-                        }`}
-                    >
-                        <img 
-                            src={idx === 0 ? "/hero-1.jpg" : img} 
-                            alt="" 
-                            className="w-full h-full object-cover"
-                            loading={idx === 0 ? "eager" : "lazy"}
-                            {...(idx === 0 ? { fetchPriority: "high" } : {})}
-                        />
-                    </div>
-                ))}
-                {/* Light overlay to fade the background image for readability */}
-                <div className="absolute inset-0 bg-black/20 pointer-events-none z-0" />
+                <div className="absolute inset-0 w-full h-full z-0">
+                    <img 
+                        src="/background.avif" 
+                        alt="Background" 
+                        className="w-full h-full object-cover"
+                        loading="eager"
+                        fetchPriority="high"
+                    />
+                </div>
+                {/* Light fading overlay for readability */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60 pointer-events-none z-0" />
                 <div className="relative z-10">
                     <Hero />
                 </div>

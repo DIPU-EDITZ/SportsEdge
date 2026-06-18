@@ -11,6 +11,38 @@ import proj5 from "../assets/projects/Rooftop_pickleball_court_prayagraj.jpeg";
 import proj6 from "../assets/projects/multisports_turf_srirampur.jpeg";
 import proj7 from "../assets/projects/pickleball&badminton_court_srirampur.jpeg";
 
+import more1 from "../assets/moreImages/more1.png";
+import more2 from "../assets/moreImages/more2.png";
+import more3 from "../assets/moreImages/more3.png";
+import more4 from "../assets/moreImages/more4.png";
+import more5 from "../assets/moreImages/more5.png";
+import more6 from "../assets/moreImages/more6.png";
+import more7 from "../assets/moreImages/more7.png";
+import more8 from "../assets/moreImages/more8.png";
+import more9 from "../assets/moreImages/more9.png";
+import more10 from "../assets/moreImages/more10.png";
+import more11 from "../assets/moreImages/more11.png";
+import more12 from "../assets/moreImages/more12.png";
+import more13 from "../assets/moreImages/more13.png";
+import more14 from "../assets/moreImages/more14.png";
+
+const moreProjectsData = [
+  { image: more1, description: "High-performance sports turf installation." },
+  { image: more2, description: "Professional athletic surface construction." },
+  { image: more3, description: "Premium multi-sport facility development." },
+  { image: more4, description: "Advanced synthetic turf system." },
+  { image: more5, description: "Custom sports court infrastructure." },
+  { image: more6, description: "State-of-the-art athletic flooring." },
+  { image: more7, description: "Recreational sports facility surfacing." },
+  { image: more8, description: "Durable all-weather sports surface." },
+  { image: more9, description: "Specialized court installation project." },
+  { image: more10, description: "Professional-grade sports infrastructure." },
+  { image: more11, description: "High-quality athletic turf solution." },
+  { image: more12, description: "Modern sports facility development." },
+  { image: more13, description: "Premium interlocking sports tiles." },
+  { image: more14, description: "Comprehensive sports ground construction." }
+];
+
 const projects = [
   {
     title: "Cricket Practice Arena",
@@ -156,6 +188,37 @@ function OurProjects() {
                         <ExternalLink size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
                     </button>
                   </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────────────────────────────────
+          OTHER PROJECT IMAGES
+          ───────────────────────────────────── */}
+      <section className="py-20 px-6 md:px-12 lg:px-24 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="text-[#84cc16] text-sm font-bold tracking-[0.2em] uppercase mb-4 block">Gallery</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900">More Projects</h2>
+            <div className="w-24 h-1.5 bg-[#84cc16] mx-auto mt-6 rounded-full"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+            {moreProjectsData.map((project, idx) => (
+              <div key={idx} className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div className="relative aspect-video overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={`More Project ${idx + 1}`} 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+                <div className="p-5 flex-grow flex items-center justify-center text-center">
+                  <p className="text-sm font-medium text-gray-700 leading-relaxed">
+                    {project.description}
+                  </p>
                 </div>
               </div>
             ))}

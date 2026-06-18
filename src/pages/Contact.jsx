@@ -241,7 +241,7 @@ function Contact() {
                 <button 
                   type="submit" 
                   disabled={status === 'loading'}
-                  className="w-full flex items-center justify-center gap-2 text-[#08060d] bg-[#bef264] hover:bg-[#84cc16] focus:ring-4 focus:outline-none focus:ring-[#bef264]/50 font-bold rounded-xl text-base px-5 py-4 text-center transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-full flex items-center cursor-pointer justify-center gap-2 text-[#08060d] bg-[#bef264] hover:bg-[#84cc16] focus:ring-4 focus:outline-none focus:ring-[#bef264]/50 font-bold rounded-xl text-base px-5 py-4 text-center transition-all disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {status === 'loading' ? (
                     <>
