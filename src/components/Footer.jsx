@@ -7,6 +7,7 @@ function Footer() {
         { name: "Home", path: "/" },
         { name: "Product Range", path: "/product-range" },
         { name: "Our Partners", path: "/our-partners" },
+        { name: "Our Projects", path: "/our-projects" },
         { name: "Our Clients", path: "/our-clients" },
         { name: "Contact Us", path: "/contact" },
     ];

@@ -3,14 +3,19 @@ import { MapPin, CheckCircle2 } from 'lucide-react';
 import Footer from '../components/Footer';
 
 const clients = [
+  { name: 'Delhi Public School (Ruby Park)', location: 'Kolkata' },
+  { name: 'Sudhir Memorial Institute', location: 'Kolkata' },
   { name: 'BGS International School', location: 'Bengaluru' },
   { name: 'The Heritage Resort', location: 'Jaipur' },
   { name: 'Axis Mall Turf', location: 'Kolkata' },
   { name: 'Eastern Railway Sports Association', location: 'Asansol' },
-  { name: 'Delhi Public School', location: 'Multiple Locations' },
   { name: 'National Sports Club', location: 'Mumbai' },
   { name: 'Jain International School', location: 'Nagpur' },
   { name: 'Sports Authority of India (SAI)', location: 'Regional Centers' },
+  { name: 'Baguiati Sports Arena', location: 'Kolkata' },
+  { name: 'Srirampur Multisports Club', location: 'Hooghly' },
+  { name: 'Prayagraj Rooftop Sports', location: 'Uttar Pradesh' },
+  { name: 'Khidirpur Play Turf', location: 'Kolkata' },
 ];
 
 function OurClients() {
@@ -46,7 +51,7 @@ function OurClients() {
             <div className="text-sm font-semibold text-gray-500 uppercase tracking-wider mt-2">Cities Covered</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-black text-[#84cc16]">13+</div>
+            <div className="text-4xl font-black text-[#84cc16]">20+</div>
             <div className="text-sm font-semibold text-gray-500 uppercase tracking-wider mt-2">Schools & Clubs</div>
           </div>
         </div>
