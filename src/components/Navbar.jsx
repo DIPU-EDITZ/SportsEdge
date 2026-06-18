@@ -60,7 +60,7 @@ function Navbar() {
                         <span
                             className={`w-6 h-[2.5px] rounded-full transition-all duration-300 origin-left transform ${
                                 isOpen
-                                    ? "rotate-45 translate-x-[3px] -translate-y-[1px] bg-[#bef264]"
+                                    ? "rotate-45 translate-x-0.75 -translate-y-px bg-[#bef264]"
                                     : "bg-white group-hover:bg-[#bef264]"
                             }`}
                         />
@@ -74,7 +74,7 @@ function Navbar() {
                         <span
                             className={`w-6 h-[2.5px] rounded-full transition-all duration-300 origin-left transform ${
                                 isOpen
-                                    ? "-rotate-45 translate-x-[3px] translate-y-[1px] bg-[#bef264]"
+                                    ? "-rotate-45 translate-x-0.75 translate-y-px bg-[#bef264]"
                                     : "bg-white group-hover:bg-[#bef264]"
                             }`}
                         />
@@ -153,7 +153,7 @@ function Navbar() {
                                 : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
                         }`}
                     >
-                        <div className="absolute top-0 left-8 w-16 h-0.5 bg-gradient-to-r from-transparent via-[#bef264] to-transparent rounded-full" />
+                        <div className="absolute top-0 left-8 w-16 h-0.5 bg-linear-to-r from-transparent via-[#bef264] to-transparent rounded-full" />
                         {products.map((p) => (
                             <NavLink
                                 key={p.name}
@@ -223,7 +223,7 @@ function Navbar() {
                         : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
                 }`}
             >
-                <div className="absolute top-0 right-12 w-20 h-0.5 bg-gradient-to-r from-transparent via-[#bef264] to-transparent rounded-full" />
+                <div className="absolute top-0 right-12 w-20 h-0.5 bg-linear-to-r from-transparent via-[#bef264] to-transparent rounded-full" />
 
                 {/* Home */}
                 <NavLink
@@ -270,7 +270,7 @@ function Navbar() {
                     <div
                         className={`overflow-hidden transition-all duration-300 ${
                             mobileProductsOpen
-                                ? "max-h-[400px] opacity-100"
+                                ? "max-h-100 opacity-100"
                                 : "max-h-0 opacity-0"
                         }`}
                     >
@@ -344,3 +344,6 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+

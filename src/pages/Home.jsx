@@ -218,7 +218,7 @@ function Home() {
             {/* ─────────────────────────────────────
           SECTION 1 — HERO
           ───────────────────────────────────── */}
-            <div className="relative w-full overflow-hidden bg-[#08060d] h-[600px] md:h-[700px] lg:h-[800px]">
+            <div className="relative w-full overflow-hidden bg-[#08060d] h-150 md:h-175 lg:h-200">
                 {carouselImages.map((img, idx) => (
                     <div
                         key={idx}
@@ -446,8 +446,10 @@ function Home() {
                                     <div className="w-16 h-16 rounded-2xl bg-white shadow-sm border border-gray-100 flex items-center justify-center mb-8">
                                         <Icon
                                             size={32}
+                                            aria-hidden="true"
                                             className="text-[#84cc16]"
                                         />
+
                                     </div>
                                     <h3 className="text-gray-900 text-2xl font-bold mb-4">
                                         {pillar.title}

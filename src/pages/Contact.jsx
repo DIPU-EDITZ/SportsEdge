@@ -96,7 +96,7 @@ function Contact() {
             <div className="space-y-8">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-gray-50 border border-gray-100 rounded-full flex items-center justify-center shrink-0">
-                  <MapPin className="text-[#84cc16]" size={24} />
+                  <MapPin aria-hidden="true" className="text-[#84cc16]" size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Corporate Office</h4>
