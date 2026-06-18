@@ -39,7 +39,7 @@ function AboutUs() {
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission & Vision</h2>
             <p className="text-gray-600 text-base leading-relaxed mb-6">
-              SPORTS-EDGE provides innovative sports surface systems which reduce leg, ligament and lower back strains and injuries. We are seen as a knowledgeable solution provider for sports infrastructure in the country — known for providing ground-breaking products combined with flawless execution.
+              SPORTS-EDGE provides innovative sports surface systems which reduce leg, ligament and lower back strains and injuries. We are seen as a knowledgeable solution provider for sports infrastructure in the sports industry — known for providing ground-breaking products combined with flawless execution.
             </p>
             <p className="text-gray-600 text-base leading-relaxed mb-8">
               We strive for superior customer satisfaction by recommending the most suitable surface as per client needs, ensuring lasting performance, longevity, and peak condition.
