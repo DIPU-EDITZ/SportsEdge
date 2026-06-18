@@ -48,7 +48,7 @@ function SectionLabel({ children }) {
 const stats = [
     {
         icon: Factory,
-        number: "15+",
+        number: "10+",
         label: "Stadium Tracks",
         sub: "Professional Venues",
     },
@@ -61,7 +61,7 @@ const stats = [
     },
     {
         icon: Award,
-        number: "8yr",
+        number: "5yr",
         label: "Full Warranty",
         sub: "UV stable polymers",
     },

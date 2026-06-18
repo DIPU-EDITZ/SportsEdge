@@ -48,14 +48,14 @@ function SectionLabel({ children }) {
 const stats = [
     {
         icon: Factory,
-        number: "50+",
+        number: "10+",
         label: "Projects Done",
         sub: "Acrylic systems",
     },
     { icon: Globe, number: "ITF", label: "Certified", sub: "World standards" },
     {
         icon: ShieldCheck,
-        number: "10yr",
+        number: "5yr",
         label: "Warranty",
         sub: "UV stable colors",
     },

@@ -47,7 +47,7 @@ function SectionLabel({ children }) {
 const stats = [
     {
         icon: Factory,
-        number: "50+",
+        number: "10+",
         label: "Arenas Completed",
         sub: "Premium wood",
     },
@@ -59,7 +59,7 @@ const stats = [
     },
     {
         icon: ShieldCheck,
-        number: "25yr",
+        number: "10yr",
         label: "Lifespan",
         sub: "Highly durable",
     },

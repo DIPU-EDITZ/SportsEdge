@@ -48,7 +48,7 @@ function SectionLabel({ children }) {
 const stats = [
     {
         icon: Factory,
-        number: "20+",
+        number: "10+",
         label: "Courts Built",
         sub: "PP Modular systems",
     },
@@ -60,13 +60,13 @@ const stats = [
     },
     {
         icon: ShieldCheck,
-        number: "15yr",
+        number: "10yr",
         label: "Life Span",
         sub: "Highly durable",
     },
     {
         icon: Award,
-        number: "1 Day",
+        number: "3 Days",
         label: "Installation",
         sub: "Fast snap-lock",
     },

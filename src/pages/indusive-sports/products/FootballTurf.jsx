@@ -54,7 +54,7 @@ const stats = [
     },
     {
         icon: Globe,
-        number: "200+",
+        number: "20+",
         label: "FIFA Fields",
         sub: "Certified & tested",
     },

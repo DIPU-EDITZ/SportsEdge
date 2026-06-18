@@ -48,7 +48,7 @@ function SectionLabel({ children }) {
 const stats = [
     {
         icon: Factory,
-        number: "120+",
+        number: "10+",
         label: "Courts Installed",
         sub: "Schools & Academies",
     },

@@ -48,7 +48,7 @@ function SectionLabel({ children }) {
 const stats = [
     {
         icon: Factory,
-        number: "40+",
+        number: "4+",
         label: "Pools Built",
         sub: "Commercial & Private",
     },

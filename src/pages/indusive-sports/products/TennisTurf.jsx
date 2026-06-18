@@ -48,7 +48,7 @@ function SectionLabel({ children }) {
 const stats = [
     {
         icon: Factory,
-        number: "250+",
+        number: "25+",
         label: "Courts Built",
         sub: "Professional & Private",
     },
@@ -61,7 +61,7 @@ const stats = [
     },
     {
         icon: Award,
-        number: "10yr",
+        number: "5yr",
         label: "Warranty",
         sub: "UV stable pigments",
     },
