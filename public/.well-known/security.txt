@@ -1,4 +1,25 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
 Contact: mailto:contact@sportsedge.net.in
+Encryption: https://sportsedge.net.in/.well-known/pgp-key.txt
 Expires: 2027-06-18T12:00:00.000Z
 Preferred-Languages: en
 Canonical: https://sportsedge.net.in/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iQJqBAEBCABUFiEE9/RKzgb+j/5tvX/qsSB3NlwoZoMFAmozbaUbFIAAAAAABAAO
+bWFudTIsMi41KzEuMTIsMiwxGhxjb250YWN0QHNwb3J0c2VkZ2UubmV0LmluAAoJ
+ELEgdzZcKGaDMDUQAIg05+dUyyFbRo3dKh/J8FtKKeetD1UoJiMcIxK+R4pUKGXY
+nxHtHCVvj5PsjME5Ndpq8S9hKaOaw2OdsWwgUVflrwV8KOc2Qc8mm13MNAu1XNuW
+jjSz5Jfannwkmvr+P9+gyPN0q58R5X24a0PfiWR9xlOHtglaJJ9p9tzctOIUYLeF
+nGEIF0uOM2EO4Ki3oOtP+15tu5O6TF8pzPBprfUKjSsix4ON8Q0TG8dsoxuDMzwb
+BMtGBzvORFrMj681rcYP9DtWg10OMTONsIKfcj3w2DqxDFQxX77r6KYF/ak0MlkQ
+MoMvsHFdpS4CEcEHBa1X3spZZBl2RHC/8+FeiXnZ+0na6N6umYIBdi/BpfWdah5c
+TPdGShdlJwfLvGqpDYVViwmEKNvdhz71TS430OGb/7RijMwO00IKy2Id+TYwhxu5
+e9djB2Daz1fL7iUcRoxl2upj18s2Iqw9LbXGNd3MEYT3BC4Ay5joN8j5ror3/HCP
++coMBwaOOMnA6q2R14Xd413g7ycWEUG45aRlgysepjf+ZgcVT8OPVDDBMKlpT8Sn
+nhfz8bzKXfYKSDCeiW1yXR8z89BkESSSF/M0FEnocAwt/bIYexCC/OzdZROLf9rA
+J/r/FNwKgA7BvLJifjf+UCd9l6hHjWXrG2hN5wN9hC31Gd45tMmAOicI6T9q
+=zJJA
+-----END PGP SIGNATURE-----
