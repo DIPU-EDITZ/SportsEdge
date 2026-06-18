@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import footballTurf from "../assets/football court.avif";
 import tennisCourt from "../assets/tennis court.avif";
 import hockeyCourt from "../assets/hocky court.avif";
-import footballCourt from "../assets/projects/multisports_turf_srirampur.jpeg";
+import footballCourt from "../assets/projects/Cricket_turf_baguiati.jpeg";
 import badmintonCourt from "../assets/acrylic court.avif";
 import woodenCourt from "../assets/wooden court.avif";
 
