@@ -11,7 +11,7 @@ import {
     Droplets,
 } from "lucide-react";
 import Footer from "../../../components/Footer";
-import ppTilesImg from "../../../assets/PP tiles court.avif";
+import ppTilesImg from "../../../assets/projects/PP_tiles_basketball_sudhir_memorial_institute.jpeg";
 
 // Use same hook as Home for appearing animations
 function useScrollReveal(threshold = 0.15) {
@@ -48,7 +48,7 @@ function SectionLabel({ children }) {
 const stats = [
     {
         icon: Factory,
-        number: "200+",
+        number: "20+",
         label: "Courts Built",
         sub: "PP Modular systems",
     },
