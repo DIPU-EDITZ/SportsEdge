@@ -146,7 +146,7 @@ function Footer() {
                         © {new Date().getFullYear()} SportsEdge. All rights
                         reserved.
                     </p>
-                    <p className="text-white/30 text-xs pb-9">
+                    <p className="text-white/30 text-xs pb-6">
                         Build with <Link to="https://dorium.vercel.app/" target="blank">
                                 <span className="text-[#bef264] hover:text-white">
                                     Dorium
