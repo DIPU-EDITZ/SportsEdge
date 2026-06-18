@@ -13,8 +13,18 @@ import swimmingCourt from "../../assets/swimming court.avif";
 import badmintonCourt from "../../assets/batminton court.jpg";
 import woodenCourt from "../../assets/wooden court.avif";
 import ppTilesCourt from "../../assets/PP tiles court.avif";
+import cricketTurf from "../../assets/projects/Cricket_turf_baguiati.jpeg";
 
 const products = [
+    {
+        title: "Cricket Turf",
+        category: "Synthetic Turf",
+        description:
+            "Professional-grade synthetic cricket pitches designed for consistent ball pace, true bounce, and extreme durability in all weather.",
+        path: "/products/cricket-turf",
+        image: cricketTurf,
+        features: ["True Bounce", "UV Stable", "Low Maintenance"],
+    },
     {
         title: "Football Turf",
         category: "Synthetic Turf",
