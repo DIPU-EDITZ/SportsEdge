@@ -1,0 +1,4 @@
+Contact: mailto:contact@sportsedge.net.in
+Expires: 2027-06-18T12:00:00.000Z
+Preferred-Languages: en
+Canonical: https://sportsedge.net.in/.well-known/security.txt
