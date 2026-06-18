@@ -5,11 +5,11 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 
 // Asset imports
-import footballTurf from "../assets/football turf.avif";
+import footballTurf from "../assets/football court.avif";
 import tennisCourt from "../assets/tennis court.avif";
 import hockeyCourt from "../assets/hocky court.avif";
-import footballCourt from "../assets/football court.avif";
-import badmintonCourt from "../assets/batminton court.jpg";
+import footballCourt from "../assets/projects/multisports_turf_srirampur.jpeg";
+import badmintonCourt from "../assets/acrylic court.avif";
 import woodenCourt from "../assets/wooden court.avif";
 
 import proj1 from "../assets/projects/Cricket_turf_baguiati.jpeg";
@@ -37,12 +37,6 @@ const sports = [
         desc: "FIFA certified synthetic turf systems",
         image: footballTurf,
         path: "/products/football-turf",
-    },
-    {
-        name: "Hockey Turf",
-        desc: "FIH approved artificial hockey surfaces",
-        image: hockeyCourt,
-        path: "/products/hockey-turf",
     },
     {
         name: "Tennis Court",
