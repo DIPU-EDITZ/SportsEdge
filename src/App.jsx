@@ -23,7 +23,7 @@ import LandscapeLeisureTurf from './pages/indusive-sports/products/LandscapeLeis
 import CricketTurf from './pages/indusive-sports/products/CricketTurf';
 import RunningTrack from './pages/indusive-sports/products/RunningTrack';
 import SwimmingPool from './pages/indusive-sports/products/SwimmingPool';
-
+import BasketBall from './pages/indusive-sports/products/BasketballCourt';
 // Top-level pages
 import Testimonials from './pages/Testimonials';
 import OurClients from './pages/OurClients';
@@ -91,6 +91,10 @@ function App() {
                 <Route
                     path="/products/swimming-pool"
                     element={<SwimmingPool />}
+                />
+                <Route
+                    path="/product-range/basketball-court"
+                    element={<BasketBall />}
                 />
 
                 {/* Main pages */}

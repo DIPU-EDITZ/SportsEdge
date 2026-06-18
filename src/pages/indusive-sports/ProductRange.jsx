@@ -46,7 +46,7 @@ const products = [
         category: "PU / Acrylic",
         description:
             "FIBA standard indoor & outdoor courts providing superior shock absorption, slip resistance, and vibrant custom colors.",
-        path: "/product-range",
+        path: "/product-range/basketball-court",
         image: basketballCourt,
         features: ["High Grip", "Seamless Finish", "Impact Protection"],
     },
