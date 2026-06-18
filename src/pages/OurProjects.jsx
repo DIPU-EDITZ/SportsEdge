@@ -51,7 +51,7 @@ const projects = [
     image: proj1,
     category: "Cricket",
     description: "Installation of professional-grade nylon netting and 15mm multisports turf for high-performance cricket practice.",
-    year: "2024"
+    year: "2026"
   },
   {
     title: "FIFA Standard Football Turf",
@@ -60,7 +60,7 @@ const projects = [
     image: proj2,
     category: "Football",
     description: "Premium synthetic football turf installation featuring advanced drainage and shock-absorption systems.",
-    year: "2024"
+    year: "2026"
   },
   {
     title: "Interlocking PP Tiles Court",
@@ -69,7 +69,7 @@ const projects = [
     image: proj3,
     category: "Basketball",
     description: "Professional basketball court featuring high-impact polypropylene (PP) interlocking tiles for superior grip and safety.",
-    year: "2023"
+    year: "2026"
   },
   {
     title: "Recreational Play Turf",
@@ -78,7 +78,7 @@ const projects = [
     image: proj4,
     category: "Multi-Sport",
     description: "Community-focused multi-purpose turf designed for football, cricket, and general fitness activities.",
-    year: "2023"
+    year: "2026"
   },
   {
     title: "Rooftop Pickleball Court",
@@ -87,7 +87,7 @@ const projects = [
     image: proj5,
     category: "Pickleball",
     description: "Innovative rooftop sports facility maximizing urban space with professional acrylic surfacing for pickleball.",
-    year: "2024"
+    year: "2026"
   },
   {
     title: "Multisports Club Turf",
@@ -96,7 +96,7 @@ const projects = [
     image: proj6,
     category: "Multi-Sport",
     description: "Large-scale multisport turf installation supporting multiple athletic disciplines in a single facility.",
-    year: "2023"
+    year: "2025"
   },
   {
     title: "Pickleball & Badminton Combo",
@@ -105,7 +105,7 @@ const projects = [
     image: proj7,
     category: "Racket Sports",
     description: "Combined court system with specialized surfacing suitable for both high-intensity badminton and pickleball.",
-    year: "2024"
+    year: "2025"
   }
 ];
 
@@ -178,16 +178,9 @@ function OurProjects() {
                     <span className="text-sm font-bold text-gray-500 italic">Project for {project.client}</span>
                   </div>
 
-                  <p className="text-gray-600 leading-relaxed mb-8 grow">
+                  <p className="text-gray-600 leading-relaxed grow">
                     {project.description}
                   </p>
-
-                  <div className="pt-6 border-t border-gray-100 flex items-center justify-between">
-                    <button className="text-gray-900 font-bold text-sm flex items-center gap-2 group/btn hover:text-[#84cc16] transition-colors">
-                        View Project Details
-                        <ExternalLink size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-                    </button>
-                  </div>
                 </div>
               </div>
             ))}
