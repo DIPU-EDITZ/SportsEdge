@@ -216,7 +216,7 @@ function Home() {
             {/* ─────────────────────────────────────
           SECTION 1 — HERO
           ───────────────────────────────────── */}
-            <div className="relative w-full overflow-hidden bg-[#08060d] h-150 md:h-175 lg:h-200">
+            <div className="relative w-full overflow-hidden bg-[#08060d] h-auto lg:h-200">
                 {carouselImages.map((img, idx) => (
                     <div
                         key={idx}
