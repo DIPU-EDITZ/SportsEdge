@@ -11,7 +11,7 @@ import {
     Droplets,
 } from "lucide-react";
 import Footer from "../../../components/Footer";
-import badmintonCourtImg from "../../../assets/batminton court.jpg";
+import badmintonCourtImg from "../../../assets/acrylic court.avif";
 
 // Use same hook as Home for appearing animations
 function useScrollReveal(threshold = 0.15) {
@@ -48,11 +48,11 @@ function SectionLabel({ children }) {
 const stats = [
     {
         icon: Factory,
-        number: "100+",
+        number: "10+",
         label: "Courts Installed",
         sub: "Last 2 years",
     },
-    { icon: Globe, number: "15+", label: "Countries", sub: "Global footprint" },
+    { icon: Globe, number: "15+", label: "Cities", sub: "PAN India footprint" },
     {
         icon: ShieldCheck,
         number: "BWF",

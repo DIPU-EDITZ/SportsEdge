@@ -48,7 +48,7 @@ function SectionLabel({ children }) {
 const stats = [
     {
         icon: Factory,
-        number: "500+",
+        number: "50+",
         label: "Projects Done",
         sub: "Acrylic systems",
     },
