@@ -10,7 +10,7 @@ import basketballCourt from "../../assets/basketball court.avif";
 import runningTracks from "../../assets/running tracks.avif";
 import multipurposeCourt from "../../assets/multipurpose court.avif";
 import swimmingCourt from "../../assets/swimming court.avif";
-import badmintonCourt from "../../assets/batminton court.jpg";
+import badmintonCourt from "../../assets/acrylic court.avif";
 import woodenCourt from "../../assets/wooden court.avif";
 import ppTilesCourt from "../../assets/PP tiles court.avif";
 
