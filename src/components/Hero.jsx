@@ -8,7 +8,7 @@ function Hero() {
             {/* Left Column */}
             <div className="lg:col-span-7 text-center lg:text-left">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-white/40 mb-6 shadow-sm">
-                    <ShieldCheck size={16} aria-hidden="true" className="text-[#84cc16]" />
+                    <ShieldCheck aria-hidden="true" className="w-5 h-5 sm:w-4 sm:h-4 text-[#84cc16] shrink-0" />
                     <span className="text-xs font-bold text-gray-900 tracking-wide uppercase">
                         Eastern India's No. 1 Sports Infrastructure Company
                     </span>
