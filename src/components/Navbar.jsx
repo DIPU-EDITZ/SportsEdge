@@ -19,6 +19,17 @@ function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [isOpen]);
+
     const handleProductsEnter = () => {
         clearTimeout(productsTimer.current);
         setProductsDropdownOpen(true);
@@ -219,7 +230,7 @@ function Navbar() {
 
             {/* Mobile Menu Panel */}
             <div
-                className={`absolute top-full left-0 right-0 mt-3 mx-4 bg-[#121622] border-2 border-[#bef264]/20 rounded-3xl p-6 shadow-2xl z-40 flex flex-col gap-2 lg:hidden transition-all duration-300 ease-in-out origin-top ${
+                className={`absolute top-full left-0 right-0 mt-3 mx-4 bg-[#121622] border-2 border-[#bef264]/20 rounded-3xl p-6 shadow-2xl z-40 flex flex-col gap-2 lg:hidden transition-all duration-300 ease-in-out origin-top max-h-[calc(100vh-100px)] overflow-y-auto ${
                     isOpen
                         ? "opacity-100 scale-100 translate-y-0 pointer-events-auto"
                         : "opacity-0 scale-95 -translate-y-2 pointer-events-none"

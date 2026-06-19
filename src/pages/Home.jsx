@@ -210,17 +210,19 @@ function Home() {
           SECTION 1 — HERO
           ───────────────────────────────────── */}
             <div className="relative w-full overflow-hidden bg-[#08060d] h-auto lg:h-200">
-                <div className="absolute inset-0 w-full h-full z-0">
+                <div className="absolute top-0 left-0 w-full h-[65vh] md:h-full z-0">
                     <img 
                         src="/background.png" 
                         alt="Background" 
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-[center_top] md:object-center"
                         loading="eager"
                         fetchPriority="high"
                     />
+                    {/* Fade bottom to background color on mobile */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#08060d] md:hidden" />
                 </div>
                 {/* Light fading overlay for readability */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60 pointer-events-none z-0" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-[#08060d] md:to-black/60 pointer-events-none z-0" />
                 <div className="relative z-10">
                     <Hero />
                 </div>
