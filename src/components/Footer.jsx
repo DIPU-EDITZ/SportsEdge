@@ -151,7 +151,7 @@ function Footer() {
                     <p className="text-white/30 text-xs pb-6">
                         Built with <Link to="https://dorium.vercel.app/" target="blank">
                                 <span className="text-[#bef264] hover:text-white">
-                                    Dorium
+                                    Dorium Corp. Pvt. Ltd.
                                 </span>
                             </Link>
                     </p>
