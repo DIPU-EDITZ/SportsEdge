@@ -113,7 +113,7 @@ export default App;*/}
 
 function App() {
     return (
-        <div className="relative h-screen w-screen bg-[#08060d] text-white font-sans overflow-hidden flex flex-col justify-center items-center px-4">
+        <div className="relative min-h-screen w-full bg-gray-50 text-gray-900 font-sans overflow-y-auto overflow-x-hidden flex flex-col justify-center items-center px-6 py-12">
             {/* 
             <ScrollToTop />
             
@@ -150,19 +150,19 @@ function App() {
             */}
 
             {/* Maintenance Layout */}
-            <div className="relative z-10 max-w-sm w-full flex flex-col items-center text-center px-4">
+            <div className="relative z-10 max-w-xl w-full flex flex-col items-center text-center px-4">
                 {/* Brand */}
-                <div className="flex flex-col items-center mb-6">
-                    <span className="text-white text-3xl font-extrabold tracking-tight leading-none">
+                <div className="flex flex-col items-center mb-8">
+                    <span className="text-gray-900 text-4xl md:text-5xl font-extrabold tracking-tight leading-none">
                         SportsEdge
                     </span>
-                    <span className="text-[#bef264] text-[10px] font-normal mt-1.5 lowercase tracking-wider">
+                    <span className="text-[#84cc16] text-xs md:text-sm font-bold mt-2 lowercase tracking-widest">
                         build with us
                     </span>
                 </div>
 
                 {/* Animated Lottie */}
-                <div className="w-44 h-44 mb-6 flex items-center justify-center">
+                <div className="w-64 h-64 md:w-80 md:h-80 mb-8 flex items-center justify-center">
                     <lottie-player
                         src="/website-maintenance.json"
                         background="transparent"
@@ -174,27 +174,24 @@ function App() {
                 </div>
 
                 {/* Content */}
-                <h1 className="text-2xl font-bold text-white mb-2 leading-tight tracking-tight">
+                <h1 className="text-2xl md:text-4xl font-extrabold text-gray-900 mb-3 leading-tight tracking-tight">
                     Under Maintenance
                 </h1>
-                <p className="text-gray-400 text-sm leading-relaxed mb-8">
+                <p className="text-gray-600 text-sm md:text-lg leading-relaxed mb-10 max-w-md">
                     We'll be back online shortly with an enhanced experience. Thank you for your patience!
                 </p>
 
                 {/* Contact Section */}
-                <div className="flex flex-col items-center gap-1">
-                    <p className="text-[9px] text-gray-500 font-bold uppercase tracking-widest">Reach out at</p>
+                <div className="flex flex-col items-center gap-2">
+                    <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Reach out at</p>
                     <a
                         href="mailto:sportsedge2025@gmail.com"
-                        className="text-sm font-semibold text-[#bef264] hover:underline transition-all"
+                        className="text-base md:text-xl font-bold text-[#84cc16] hover:text-[#65a30d] hover:underline transition-all"
                     >
                         sportsedge2025@gmail.com
                     </a>
                 </div>
             </div>
-
-            {/* Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[#bef264]/10 rounded-full blur-[100px] pointer-events-none z-0" />
         </div>
     );
 }
