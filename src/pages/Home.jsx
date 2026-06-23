@@ -41,7 +41,7 @@ const sports = [
     {
         name: "Football Turf",
         desc: "FIFA certified synthetic turf systems",
-        image: footballTurf,
+        image: proj4,
         path: "/products/football-turf",
     },
     {

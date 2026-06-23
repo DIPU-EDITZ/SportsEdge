@@ -11,7 +11,7 @@ import {
     Droplets,
 } from "lucide-react";
 import Footer from "../../../components/Footer";
-import footballCourtImg from "../../../assets/football court.avif";
+import footballCourtImg from "../../../assets/projects/Play_turf_khidirpur.jpeg";
 
 // Use same hook as Home for appearing animations
 function useScrollReveal(threshold = 0.15) {
