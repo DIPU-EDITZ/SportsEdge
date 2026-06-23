@@ -3,8 +3,7 @@ import { Factory, Globe, ShieldCheck, Award, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 
-import football from "../assets/football court.avif";
-import cricket from "../assets/projects/Cricket_turf_baguiati.jpeg";
+import football from "../assets/projects/PP_tiles_basketball_sudhir_memorial_institute.jpeg";
 
 function AboutUs() {
   useEffect(() => {
@@ -65,12 +64,9 @@ function AboutUs() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-gray-100 rounded-2xl aspect-[4/5] overflow-hidden">
+          <div className="grid grid-cols-1">
+            <div className="bg-gray-100 rounded-2xl  overflow-hidden">
                <img src={football} alt="Football Court" className="w-full h-full object-cover transition-all duration-500" />
-            </div>
-            <div className="bg-gray-100 rounded-2xl aspect-[4/5] overflow-hidden mt-8">
-               <img src={cricket} alt="Cricket Court" className="w-full h-full object-cover transition-all duration-500" />
             </div>
           </div>
         </div>

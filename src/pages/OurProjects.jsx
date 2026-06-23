@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: "FIFA Standard Football Turf",
-    client: "Baguiati Sports Complex",
+    client: "Baguiati Sports Arena",
     location: "Kolkata, West Bengal",
     image: proj2,
     category: "Football",
@@ -33,7 +33,7 @@ const projects = [
     year: "2026"
   },
   {
-    title: "Interlocking PP Tiles Court",
+    title: "PP Tiles Basketball Court",
     client: "Sudhir Memorial Institute",
     location: "Kolkata, West Bengal",
     image: proj3,
@@ -42,7 +42,7 @@ const projects = [
     year: "2026"
   },
   {
-    title: "Recreational Play Turf",
+    title: "Rooftop Football Turf",
     client: "Khidirpur Play Turf",
     location: "Kolkata, West Bengal",
     image: proj4,
@@ -60,8 +60,8 @@ const projects = [
     year: "2026"
   },
   {
-    title: "Multisports Club Turf",
-    client: "Srirampur Multisports",
+    title: "Multisports Football Turf",
+    client: "M Homeground Turf",
     location: "Hooghly, West Bengal",
     image: proj6,
     category: "Multi-Sport",
@@ -69,8 +69,8 @@ const projects = [
     year: "2025"
   },
   {
-    title: "Pickleball & Badminton Combo",
-    client: "Srirampur Racket Club",
+    title: "Pickleball & Badminton Court",
+    client: "M Homeground Turf",
     location: "Hooghly, West Bengal",
     image: proj7,
     category: "Racket Sports",

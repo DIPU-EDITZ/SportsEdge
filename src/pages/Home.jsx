@@ -300,7 +300,7 @@ function Home() {
                     {/* Image */}
                     <div className="relative rounded-4xl overflow-hidden aspect-4/3 shadow-xl border border-gray-100">
                         <img
-                            src={footballCourt}
+                            src={proj3}
                             alt="Sports Infrastructure by SportsEdge"
                             className="w-full h-full object-cover"
                             loading="lazy"

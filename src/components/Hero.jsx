@@ -69,7 +69,7 @@ function Hero() {
                         <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 leading-tight">
                             Building the Future of Sports.
                         </h2>
-                        <p className="text-gray-800 text-sm md:text-base leading-relaxed mt-4 font-semibold">
+                        <p className="text-white text-sm md:text-base leading-relaxed mt-4 font-semibold">
                             Your trusted partner in turnkey sports
                             infrastructure. We build world-class complexes,
                             multi-sport courts, and premium fields engineered to

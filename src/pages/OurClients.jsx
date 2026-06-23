@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 const clients = [
   { name: 'Delhi Public School (Ruby Park)', location: 'Kolkata' },
   { name: 'Sudhir Memorial Institute', location: 'Kolkata' },
+  { name: 'M Homeground Turf', location: 'Shrirampur, Hooghly' },
   { name: 'BGS International School', location: 'Bengaluru' },
   { name: 'The Heritage Resort', location: 'Jaipur' },
   { name: 'Axis Mall Turf', location: 'Kolkata' },
