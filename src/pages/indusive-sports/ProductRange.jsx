@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Circle } from "lucide-react";
 import Footer from "../../components/Footer";
 
-import footballTurf from "../../assets/projects/Play_turf_khidirpur.jpegv";
+import footballTurf from "../../assets/projects/Play_turf_khidirpur.jpeg";
 import tennisCourt from "../../assets/tennis court.avif";
 import basketballCourt from "../../assets/basketball court.avif";
 import runningTracks from "../../assets/running tracks.avif";
