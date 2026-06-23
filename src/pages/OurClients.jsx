@@ -14,7 +14,6 @@ const clients = [
   { name: 'Jain International School', location: 'Nagpur' },
   { name: 'Sports Authority of India (SAI)', location: 'Regional Centers' },
   { name: 'Baguiati Sports Arena', location: 'Kolkata' },
-  { name: 'Srirampur Multisports Club', location: 'Hooghly' },
   { name: 'Prayagraj Rooftop Sports', location: 'Uttar Pradesh' },
   { name: 'Khidirpur Play Turf', location: 'Kolkata' },
 ];
