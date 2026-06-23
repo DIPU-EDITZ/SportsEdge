@@ -10,7 +10,6 @@ import tennisCourt from "../assets/tennis court.avif";
 import hockeyCourt from "../assets/hocky court.avif";
 import footballCourt from "../assets/projects/Cricket_turf_baguiati.jpeg";
 import badmintonCourt from "../assets/badminton court.jpg";
-import woodenCourt from "../assets/wooden court.avif";
 import multipurposeCourt from "../assets/projects/multisports_turf_srirampur.jpeg";
 
 import proj1 from "../assets/projects/Cricket_turf_baguiati.jpeg";
@@ -27,6 +26,12 @@ import proj7 from "../assets/projects/pickleball&badminton_court_srirampur.jpeg"
    ═══════════════════════════════════════════ */
 
 const sports = [
+    {
+        name: "PP Tiles Court",
+        desc: "Durable all-weather interlocking court tiles.",
+        image: proj3,
+        path: "/products/pp-tiles-court",
+    },
     {
         name: "Cricket Turf",
         desc: "Professional-grade synthetic cricket pitches",
@@ -50,12 +55,6 @@ const sports = [
         desc: "Professional indoor & outdoor courts",
         image: badmintonCourt,
         path: "/products/badminton-court",
-    },
-    {
-        name: "Wooden Court",
-        desc: "Premium hardwood sports flooring",
-        image: woodenCourt,
-        path: "/products/wooden-court",
     },
     {
         name: "Multi-Sport",
