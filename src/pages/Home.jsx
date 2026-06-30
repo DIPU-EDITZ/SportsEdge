@@ -65,10 +65,9 @@ const sports = [
 ];
 
 const stats = [
-    { value: 100, suffix: "+", label: "Projects Delivered" },
-    { value: 20, suffix: "+", label: "Cities Covered" },
-    { value: 50, suffix: "+", label: "Expert Team Members" },
-    { value: 13, suffix: "+", label: "Schools & Clubs" },
+    { value: 15, suffix: "+", label: "Projects Delivered" },
+    { value: 6, suffix: "+", label: "Cities Covered" },
+    { value: 5, suffix: "+", label: "Schools & Clubs" },
 ];
 
 const pillars = [
@@ -377,7 +376,7 @@ function Home() {
           SECTION 4 — STATS
           ───────────────────────────────────── */}
             <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-gray-50 border-y border-gray-200">
-                <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-4">
+                <div className="max-w-5xl mx-auto flex justify-center items-center gap-10 md:gap-4">
                     {stats.map((stat) => (
                         <StatCounter
                             key={stat.label}
