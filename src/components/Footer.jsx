@@ -30,9 +30,10 @@ function Footer() {
                      <div className="col-span-2 lg:col-span-1">
                         <Link
                             to="/"
-                            className="text-white text-2xl font-bold tracking-tight"
+                            className="flex items-center gap-2 text-white text-2xl font-bold tracking-tight hover:opacity-90 transition-opacity"
                         >
-                            SportsEdge
+                            <img src="/logo2.png" alt="SportsEdge Logo" className="h-6 w-auto object-contain" />
+                            <span>SportsEdge</span>
                         </Link>
                         <p className="text-white/50 text-sm leading-relaxed mt-4">
                             Innovative sports surface systems that reduce
