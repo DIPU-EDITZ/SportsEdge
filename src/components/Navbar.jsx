@@ -112,7 +112,7 @@ function Navbar() {
                     to="/"
                     className="flex items-center gap-2 hover:opacity-90 transition-opacity"
                 >
-                    <img src="/logo2.png" alt="SportsEdge Logo" className="h-10 w-auto object-contain" />
+                    <img src="/logo2.png" alt="SportsEdge Main Logo" className="h-10 w-auto object-contain" />
                     <div className="flex flex-col">
                         <span className="text-white text-2xl font-bold tracking-tight leading-none">
                             SportsEdge
