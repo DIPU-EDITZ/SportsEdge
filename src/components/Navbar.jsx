@@ -93,13 +93,16 @@ function Navbar() {
                         />
                     </div>
                 </button>
-                <Link to="/" className="flex flex-col">
-                    <span className="text-white text-2xl font-bold tracking-tight leading-none">
-                        SportsEdge
-                    </span>
-                    <span className="text-[#bef264] text-[9px] font-normal mt-0.5 lowercase">
-                        build with us
-                    </span>
+                <Link to="/" className="flex items-center gap-2">
+                    <img src="/logo2.png" alt="SportsEdge Logo" className="h-8 w-auto object-contain" />
+                    <div className="flex flex-col">
+                        <span className="text-white text-xl font-bold tracking-tight leading-none">
+                            SportsEdge
+                        </span>
+                        <span className="text-[#bef264] text-[8px] font-normal mt-0.5 lowercase">
+                            build with us
+                        </span>
+                    </div>
                 </Link>
             </div>
 
@@ -107,14 +110,17 @@ function Navbar() {
             <div className="hidden lg:block">
                 <Link
                     to="/"
-                    className="flex flex-col hover:opacity-90 transition-opacity"
+                    className="flex items-center gap-2 hover:opacity-90 transition-opacity"
                 >
-                    <span className="text-white text-3xl font-bold tracking-tight leading-none">
-                        SportsEdge
-                    </span>
-                    <span className="text-[#bef264] text-[10px] font-normal mt-0.5 lowercase">
-                        build with us
-                    </span>
+                    <img src="/logo2.png" alt="SportsEdge Logo" className="h-10 w-auto object-contain" />
+                    <div className="flex flex-col">
+                        <span className="text-white text-2xl font-bold tracking-tight leading-none">
+                            SportsEdge
+                        </span>
+                        <span className="text-[#bef264] text-[9px] font-normal mt-0.5 lowercase">
+                            build with us
+                        </span>
+                    </div>
                 </Link>
             </div>
 
